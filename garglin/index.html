@@ -1,0 +1,476 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>garglin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        img {
+            border: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        html,
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+            color: #fff;
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+    </style>
+    <style>
+        @media all and (max-width:499px) {
+
+            #main,
+            .section {
+                background-image: url(img/main_m.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                cursor: pointer;
+            }
+
+            #main {
+                position: relative;
+            }
+
+            #main>img {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                left: 50%;
+                margin-left: -25px;
+                bottom: 40px;
+            }
+
+            #mask {
+                position: relative;
+                overflow: hidden;
+            }
+
+            #toggle {
+                display: none;
+            }
+
+            #toggle_label {
+                display: block;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                z-index: 1;
+                cursor: pointer;
+            }
+
+            #toggle_lable>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #toggle:checked~#menu_wrap {
+                display: block;
+            }
+
+            #menu_wrap {
+                width: 100%;
+                background-color: #fff;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                display: none;
+            }
+
+            header {
+                width: auto;
+                height: 85.6287%;
+                padding: 40px;
+                box-sizing: border-box;
+            }
+
+            #header_top,
+            #header_bottom {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            #close {
+                width: 40px;
+                height: 40px;
+                float: left;
+                cursor: pointer;
+            }
+
+            #close>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #logo {
+                width: 130px;
+                float: right;
+            }
+
+            #logo img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #header_bottom {
+                margin-top: 14vw;
+            }
+
+            #header_bottom>li {
+                width: 100%;
+                height: auto;
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+
+            #header_bottom>li:last-child {
+                margin-bottom: 0;
+                padding-bottom: 10px;
+            }
+
+            #header_bottom>li>a {
+                color: #013b60;
+            }
+
+            footer {
+                width: 100%;
+                height: 85.6287%;
+                background-color: #013b60;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
+
+            #footer_top {
+                width: 100%;
+                overflow: hidden;
+                padding: 1.3020vw 0;
+                box-sizing: border-box;
+            }
+
+            #f_logo {
+                width: 130px;
+                float: left;
+                margin-top: 1vw;
+            }
+
+            #f_logo img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #sns {
+                width: 150px;
+                height: 30px;
+                float: right;
+            }
+
+            .icon {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+                float: left;
+            }
+
+            .icon:last-child {
+                margin-right: 0;
+            }
+
+            .icon img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #footer_bottom {
+                width: 100%;
+                overflow: hidden;
+                font-size: 14px;
+            }
+
+            #img_wrap {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            #but_wrap {
+                width: 20px;
+                height: 150px;
+                position: absolute;
+                top: 50%;
+                margin-top: -75px;
+                right: 20px;
+            }
+
+            .but {
+                width: 20px;
+                height: 30px;
+                border-radius: 10px;
+                background-color: #fff;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+
+            .but:first-child {
+                background-color: #000;
+            }
+
+            .but:last-child {
+                margin-bottom: 0;
+            }
+
+            #section_1 {
+                background-image: url(img/img_1_m.jpg);
+            }
+
+            .txt_box {
+                width: auto;
+                height: auto;
+                float: right;
+                margin: 70px 10px 0 0;
+            }
+
+            #section_1>.txt_box:first-child {
+                margin-right: 90px;
+            }
+
+            .title {
+                width: auto;
+                height: 40px;
+                display: inline-block;
+                line-height: 40px;
+                font-size: 20px;
+                background-color: #fff;
+                font-weight: 900;
+                padding: 0 10px;
+            }
+
+            #title_1 {
+                color: #abbf4e;
+            }
+
+            .small_title {
+                font-size: 20px;
+                font-weight: 900;
+                margin-top: 10px;
+            }
+
+            .bar {
+                width: 250px;
+                height: 2px;
+                background-color: #fff;
+                margin: 20px 0;
+                display: none;
+            }
+
+            .cont {
+                font-size: 30px;
+                display: none;
+            }
+
+            #section_2 {
+                background-image: url(img/img_2_m.jpg);
+            }
+
+            #section_2>.txt_box:first-child {
+                margin-right: 30px;
+            }
+
+            #title_2 {
+                color: #0384bd;
+            }
+
+            #section_3 {
+                background-image: url(img/img_3_m.jpg);
+            }
+
+            #title_3 {
+                color: #a13e97;
+            }
+
+            #section_4 {
+                background-image: url(img/img_4_m.jpg);
+            }
+
+            #title_4 {
+                color: #dc2543;
+            }
+
+            #click_wrap {
+                width: 40px;
+                height: 80px;
+                position: absolute;
+                right: 40px;
+                top: 38%;
+            }
+
+            #click_txt {
+                font-size: 18px;
+            }
+
+            #click_icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            #click_icon>img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+    </style>
+    <link href="css/pc.css" type="text/css" rel="stylesheet">
+    <link href="css/note.css" type="text/css" rel="stylesheet">
+    <link href="css/tab.css" type="text/css" rel="stylesheet">
+    <link href="css/m.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <img src="img/scroll.png" alt="scroll" />
+    </div>
+    <div id="mask">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" id="toggle_label">
+            <img src="img/menu.png" alt="but" />
+        </label>
+        <div id="menu_wrap">
+            <header>
+                <div id="header_top">
+                    <div id="close">
+                        <img src="img/close.png" alt="but" />
+                    </div>
+                    <h1 id="logo">
+                        <a href="#">
+                            <img src="img/header_logo.png" alt="logo" />
+                        </a>
+                    </h1>
+                </div>
+                <ul id="header_bottom">
+                    <li>
+                        <a href="#">가그린 이야기</a>
+                    </li>
+                    <li>
+                        <a href="#">충치예방</a>
+                    </li>
+                    <li>
+                        <a href="#">잇몸질환예방</a>
+                    </li>
+                    <li>
+                        <a href="#">입 안 클렌징</a>
+                    </li>
+                    <li>
+                        <a href="#">어린이 충치 예방</a>
+                    </li>
+                </ul>
+            </header>
+            <footer>
+                <div id="footer_top">
+                    <div id="f_logo">
+                        <a href="#">
+                            <img src="img/f_logo.png" alt="logo" />
+                        </a>
+                    </div>
+                    <div id="sns">
+                        <div class="icon">
+                            <a href="#">
+                                <img src="img/sns_youtube_icon2.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="#">
+                                <img src="img/sns_facebook_icon2.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="#">
+                                <img src="img/sns_naver_icon2.png" alt="icon" />
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="#">
+                                <img src="img/sns_insta_icon2.png" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer_bottom">
+                    서울특별시 동대문구 천호대로64<br /> Copyright 2017 garglin.co.kr All Rights Reserved
+                </div>
+            </footer>
+        </div>
+        <div id="img_wrap">
+            <div class="section" id="section_1">
+                <div class="txt_box">
+                    <div class="title" id="title_1">신제품출시</div>
+                    <div class="small_title">가그린 라임</div>
+                    <div class="bar"></div>
+                    <div class="cont">입냄새, 완벽차단!<br /> 상쾌한 가그린</div>
+                </div>
+            </div>
+            <div class="section" id="section_2">
+                <div class="txt_box">
+                    <div class="title" id="title_2">충치예방 가그린</div>
+                    <div class="small_title">숨어있는 충치원인균</div>
+                    <div class="bar"></div>
+                    <div class="cont">S.Mutans균<br />99.9% 제거!</div>
+                </div>
+            </div>
+            <div class="section" id="section_3">
+                <div class="txt_box" id="txt_box_3">
+                    <div class="title" id="title_3">잇몸질환예방 가그린</div>
+                    <div class="small_title">365일 잇몸건강을 위해</div>
+                    <div class="bar"></div>
+                    <div class="cont">P.진지발리스균<br /> 99.9% 제거!</div>
+                </div>
+            </div>
+            <div class="section" id="section_4">
+                <div class="txt_box">
+                    <div class="title" id="title_4">어린이용 가그린</div>
+                    <div class="small_title">어린이 충치예방을 위해</div>
+                    <div class="bar"></div>
+                    <div class="cont">6살부터 시작하는<br /> 올바른 가그린 습관!</div>
+                </div>
+            </div>
+        </div>
+        <div id="but_wrap">
+            <div class="but"></div>
+            <div class="but"></div>
+            <div class="but"></div>
+            <div class="but"></div>
+        </div>
+        <div id="click_wrap">
+            <div id="click_txt">next click!</div>
+            <div id="click_icon">
+                <img src="img/click.png" alt="icon" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

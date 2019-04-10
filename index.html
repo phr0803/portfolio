@@ -1,0 +1,4350 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>my portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        img {
+            border: 0;
+            display: block;
+        }
+
+        html,
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333;
+            height: 100%;
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+    </style>
+    <style>
+        @media all and (max-width:959px) and (min-width:900px) {
+            #monitor {
+                display: none;
+            }
+
+            #bezel {
+                width: 100%;
+                height: 100%;
+                background-image: url(img/tab_border.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                border-radius: 30px;
+            }
+
+            .screen,
+            .app_screen {
+                width: 89.7916vw;
+                height: 88vw;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 6%;
+                left: 50%;
+                border-radius: 10px;
+            }
+
+            #home_screen {
+                background-image: url(img/home_screen.jpg);
+            }
+
+            #home_today {
+                width: auto;
+                height: auto;
+                margin: 5.2083vw;
+                text-align: center;
+                font-size: 40px;
+            }
+
+            #main_screen {
+                background-color: #eaecf0;
+                display: none;
+            }
+
+            .app_top_bar {
+                width: 100%;
+                height: 4.1666vw;
+                background-color: #eaecf0;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            #main_screen>.app_top_bar {
+                background-color: transparent;
+            }
+
+            .status_icon {
+                width: 3.125vw;
+                height: 2.1875vw;
+                float: left;
+                position: relative;
+                margin: 0.8333vw 2.0833vw;
+            }
+
+            .status_icon>img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+            }
+
+            .top_bar_right {
+                float: right;
+                width: 100px;
+                height: 4.1666vw;
+                margin-right: 40px;
+            }
+
+            .battery {
+                width: 41px;
+                height: 22px;
+                float: left;
+                margin-top: 0.9375vw;
+            }
+
+            .battery>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .time {
+                width: auto;
+                height: 4.1666vw;
+                float: right;
+                text-align: center;
+                line-height: 4.1666vw;
+                color: #fff;
+                text-shadow: -1px 1px 5px #000;
+            }
+
+            #app_wrap {
+                width: auto;
+                overflow: hidden;
+                margin: 4.1666vw 8.3333vw;
+            }
+
+            #app_top_wrap,
+            #app_bottom_wrap {
+                width: auto;
+                overflow: hidden;
+            }
+
+            .app_in_wrap {
+                width: 10.4166vw;
+                height: auto;
+                float: left;
+                margin-right: 10.2708vw;
+                margin-bottom: 8.3333vw;
+                cursor: pointer;
+            }
+
+            .app_in_wrap:last-child {
+                margin-right: 0;
+            }
+
+            .app_icon {
+                width: 8.3333vw;
+                height: 8.3333vw;
+                margin: 0 auto;
+            }
+
+            .app_icon>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .app_name {
+                font-size: 1.875vw;
+                text-align: center;
+                color: #fff;
+                text-shadow: -1px 1px 5px #000;
+            }
+
+            .app_screen {
+                display: none;
+                background-color: #dfe1e4;
+            }
+
+            #home_but {
+                width: 5.2083vw;
+                height: 5.2083vw;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                cursor: pointer;
+            }
+
+            #home_but>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #me_wrap {
+                width: 41.6666vw;
+                height: 75.7916vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -35.2916vw;
+                margin-left: -20.8333vw;
+            }
+
+            #me_img {
+                width: 41.6666vw;
+                height: 41.6666vw;
+            }
+
+            #me_img>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #me_txt_wrap {
+                width: auto;
+                height: auto;
+                display: inline-block;
+                margin-top: 3.125vw;
+            }
+
+            #contact_wrap,
+            #contact_bottom_wrap,
+            .bottom_in_wrap,
+            .con_wrap,
+            #info_wrap,
+            .info_in_wrap,
+            .renwal_txt_wrap,
+            #file_wrap,
+            #file_bottom_wrap {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .app_title_wrap {
+                width: 100%;
+                height: 8.3333vw;
+            }
+
+            #contact_title {
+                font-size: 3.125vw;
+                float: left;
+                margin: 1.8333vw 0 0 40.625vw;
+            }
+
+            #plus {
+                font-size: 4.1666vw;
+                float: right;
+                margin: 0.8333vw 4.1666vw 0 0;
+            }
+
+            #contact_middle_wrap {
+                width: 100%;
+                height: 10.4166vw;
+            }
+
+            #middle_icon {
+                width: 8.3333vw;
+                height: 8.3333vw;
+                font-size: 3.125vw;
+                text-align: center;
+                line-height: 8.3333vw;
+                color: #fff;
+                background-color: #3f4754;
+                border-radius: 40px;
+                float: left;
+                margin: 1.0416vw 2.0833vw 1.0416vw 7.2916vw;
+            }
+
+            #middle_txt {
+                font-size: 1.875vw;
+                line-height: 10.1041vw;
+            }
+
+            .contact_index {
+                width: 100%;
+                height: 3.125vw;
+                background-color: #3f4754;
+                font-size: 1.875vw;
+                color: #fff;
+                padding-left: 2.0833vw;
+                box-sizing: border-box;
+            }
+
+            .con_wrap {
+                padding: 1.0416vw 0 0 2.0833vw;
+                box-sizing: border-box;
+                margin-bottom: 4.1666vw;
+            }
+
+            .bottom_in_wrap:first-child>.con_wrap:nth-child(2) {
+                margin-bottom: 0;
+            }
+
+            .contact_name,
+            .contact_con {
+                font-size: 1.875vw;
+                float: left;
+            }
+
+            .contact_con {
+                font-weight: 300;
+                margin-left: 2.0833vw;
+            }
+
+            #setting_wrap {
+                width: 100%;
+                height: 79.1666vw;
+                position: relative;
+            }
+
+            .app_title {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .app_title,
+            .right_wrap_title {
+                width: 100%;
+                height: 8.3333vw;
+                font-size: 3.125vw;
+                text-align: center;
+                line-height: 8.3333vw;
+                border-bottom: 1px solid #3f4754;
+                box-sizing: border-box;
+            }
+
+            #setting_left_wrap {
+                width: 36.4583vw;
+                height: 75.5vw;
+                border-right: 1px solid #3f4754;
+                box-sizing: border-box;
+                float: left;
+                position: absolute;
+                left: 0;
+                top: 8.3vw;
+            }
+
+            .setting_left_in_wrap {
+                width: auto;
+                height: 5.2083vw;
+                margin: 3.125vw;
+            }
+
+            .setting_left_in_wrap:nth-child(4),
+            .setting_left_in_wrap:nth-child(5) {
+                cursor: pointer;
+            }
+
+            .setting_icon {
+                width: 5.2083vw;
+                height: 5.2083vw;
+                float: left;
+            }
+
+            .setting_icon>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .setting_name {
+                font-size: 1.875vw;
+                line-height: 5.2083vw;
+                margin-left: 2.0833vw;
+                display: inline-block;
+                float: left;
+            }
+
+            .name_wifi {
+                height: 5.2083vw;
+                overflow: hidden;
+            }
+
+            .but_wrap {
+                width: 5.7291vw;
+                height: 2.9166vw;
+                float: right;
+                position: relative;
+                margin-top: 1.1458vw;
+            }
+
+            .but_bar,
+            .circle_but {
+                width: 5.5208vw;
+                height: 2.7083vw;
+                border-radius: 12px;
+                background-color: #fff;
+                border: 1px solid #3f4754;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .circle_but {
+                width: 2.8125vw;
+                height: 2.8125vw;
+                border-radius: 14px;
+                box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+            }
+
+            #setting_middle_bar {
+                width: 100%;
+                height: 4.1666vw;
+                background-color: #eaecf0;
+                margin-bottom: 3.125vw;
+            }
+
+            .setting_right_wrap {
+                width: 53.125vw;
+                height: 70.8333vw;
+                float: left;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                display: none;
+            }
+
+            .app_back {
+                width: 3.3333vw;
+                height: 3.3333vw;
+                float: left;
+                margin: 2.5vw;
+                cursor: pointer;
+            }
+
+            .app_back>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .title_name {
+                float: left;
+                margin: 0 12.5vw;
+            }
+
+            .setting_right_wrap:nth-child(4) .title_name {
+                margin: 0 16.6666vw;
+            }
+
+            #right_wrap_sub_title {
+                width: 47.9166vw;
+                overflow: hidden;
+                font-size: 1.875vw;
+                font-weight: 300;
+                margin: 0 auto;
+                margin-top: 3.125vw;
+            }
+
+            #setting_bg_wrap {
+                width: 47.9166vw;
+                height: 34.375vw;
+                margin: 1.0416vw auto;
+                padding: 2.0833vw 0 0 2.0833vw;
+                box-sizing: border-box;
+                background-color: #fff;
+            }
+
+            .setting_bg {
+                width: 20.8333vw;
+                height: 13.8541vw;
+                float: left;
+                margin: 0 2.0833vw 2.0833vw 0;
+                cursor: pointer;
+            }
+
+            .setting_bg>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #info_wrap {
+                padding: 3.125vw;
+                box-sizing: border-box;
+            }
+
+            .info_in_wrap {
+                margin-bottom: 1.0416vw;
+                font-size: 1.875vw;
+            }
+
+            .info_title {
+                width: 83px;
+                height: auto;
+                float: left;
+            }
+
+            .info_txt {
+                font-weight: 300;
+                margin-left: 4.1666vw;
+                float: left;
+            }
+
+            #app_life {
+                background-color: transparent;
+            }
+
+            #app_life>.app_in_wrap {
+                width: 52.0833vw;
+                float: left;
+                margin-right: 8.8vw;
+                margin-bottom: 10.5263vw;
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -30.2631vw;
+                margin-left: -26.3157vw;
+            }
+
+            #app_life .app_icon {
+                width: 52.0833vw;
+                height: 52.0833vw;
+            }
+
+            #app_life .app_name {
+                font-size: 5.3684vw;
+                text-align: center;
+                color: #fff;
+                text-shadow: -1px 1px 3px #000;
+            }
+
+            #app_graphic_scroll {
+                width: auto;
+                height: 83.8vw;
+                overflow-x: hidden;
+            }
+
+            .graphic_wrap {
+                width: 90%;
+                height: 60%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin: 10% 5%;
+            }
+
+            .graphic_wrap:nth-child(1) {
+                background-image: url(img/polygone_art.jpg);
+            }
+
+            .graphic_wrap:nth-child(2) {
+                background-image: url(img/label.jpg);
+                height: 45%;
+            }
+
+            .graphic_wrap:nth-child(3) {
+                background-image: url(img/illu.jpg);
+            }
+
+            .graphic_wrap:nth-child(4) {
+                background-image: url(img/room.jpg);
+            }
+
+            .graphic_wrap:nth-child(5) {
+                background-image: url(img/sketch.jpg);
+            }
+
+            .graphic_wrap:nth-child(6) {
+                background-image: url(img/neonsign.jpg);
+            }
+
+            .app_graphic_txt {
+                width: 100%;
+                height: 100%;
+                display: none;
+                font-size: 3.125vw;
+                color: white;
+                padding: 2%;
+                box-sizing: border-box;
+            }
+
+
+            .portfolio_wrap {
+                width: 62.5vw;
+                overflow: hidden;
+                margin: 1.0416vw auto;
+            }
+
+            .renwal_img {
+                width: 62.5vw;
+                height: 31.7708vw;
+            }
+
+            .renwal_img>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .renwal_txt_left_wrap,
+            .renwal_txt_right_wrap {
+                width: 40%;
+                overflow: hidden;
+                float: left;
+                margin-top: 3.125vw;
+            }
+
+            .renwal_txt_right_wrap {
+                width: 60%;
+                margin-top: 2.7vw;
+            }
+
+            .app_txt_wrap {
+                width: auto;
+                height: auto;
+                margin-bottom: 2.0833vw;
+            }
+
+            .app_txt_title_wrap,
+            #view {
+                width: auto;
+                height: auto;
+                display: inline-block;
+            }
+
+            .app_bar {
+                width: 0.4166vw;
+                height: 2.0833vw;
+                background-color: #333;
+                float: left;
+                margin: 3.5px 1.0416vw 0 0;
+            }
+
+            .app_txt_title {
+                float: left;
+            }
+
+            .app_cont {
+                margin-left: 1.5625vw;
+                font-weight: 300;
+            }
+
+            #view {
+                float: right;
+            }
+
+            #file_top_wrap {
+                width: 100%;
+                height: 8.3333vw;
+                background-color: #e2c221;
+            }
+
+            #file_top_left,
+            #file_top_right {
+                width: auto;
+                height: auto;
+                float: left;
+                margin-left: 4.1666vw;
+                margin-top: 1.8229vw;
+            }
+
+            #menu_but {
+                width: 3.3333vw;
+                height: 2.1875vw;
+                margin: 1.25vw 0;
+            }
+
+            #file_app_name {
+                font-size: 3.125vw;
+                margin-left: 3.125vw;
+            }
+
+            #file_top_right {
+                float: right;
+                margin-top: 2.5vw;
+            }
+
+            #search_but {
+                width: 3.3333vw;
+                height: 3.3333vw;
+            }
+
+            #more_but {
+                width: 0.8333vw;
+                height: 3.3333vw;
+                margin: 0 4.1666vw;
+            }
+
+            #file_top_left>div,
+            #file_top_right>div {
+                float: left;
+            }
+
+            #file_top_wrap img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #file_con {
+                width: 82.8125vw;
+                height: 61.1458vw;
+                margin: 4.1666vw auto;
+            }
+
+            #file_con>img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        /*end*/
+
+    </style>
+    <style>
+        @media all and (max-width:899px) and (min-width:850px) {
+            #monitor {
+                display: none;
+            }
+
+            #bezel {
+                width: 100%;
+                height: 100%;
+                background-image: url(img/tab_border.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                border-radius: 30px;
+            }
+
+            .screen,
+            .app_screen {
+                width: 89.7916vw;
+                height: 90vw;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 6%;
+                left: 50%;
+                border-radius: 10px;
+            }
+
+            #home_screen {
+                background-image: url(img/home_screen.jpg);
+            }
+
+            #home_today {
+                width: auto;
+                height: auto;
+                margin: 5.2083vw;
+                text-align: center;
+                font-size: 40px;
+            }
+
+            #main_screen {
+                background-color: #eaecf0;
+                display: none;
+            }
+
+            .app_top_bar {
+                width: 100%;
+                height: 4.1666vw;
+                background-color: #eaecf0;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            #main_screen>.app_top_bar {
+                background-color: transparent;
+            }
+
+            .status_icon {
+                width: 3.125vw;
+                height: 2.1875vw;
+                float: left;
+                position: relative;
+                margin: 0.8333vw 2.0833vw;
+            }
+
+            .status_icon>img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+            }
+
+            .top_bar_right {
+                float: right;
+                width: 100px;
+                height: 4.1666vw;
+                margin-right: 40px;
+            }
+
+            .battery {
+                width: 41px;
+                height: 22px;
+                float: left;
+                margin-top: 0.9375vw;
+            }
+
+            .battery>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .time {
+                width: auto;
+                height: 4.1666vw;
+                float: right;
+                text-align: center;
+                line-height: 4.1666vw;
+                color: #fff;
+                text-shadow: -1px 1px 5px #000;
+            }
+
+            #app_wrap {
+                width: auto;
+                overflow: hidden;
+                margin: 4.1666vw 8.3333vw;
+            }
+
+            #app_top_wrap,
+            #app_bottom_wrap {
+                width: auto;
+                overflow: hidden;
+            }
+
+            .app_in_wrap {
+                width: 10.4166vw;
+                height: auto;
+                float: left;
+                margin-right: 10.2708vw;
+                margin-bottom: 8.3333vw;
+                cursor: pointer;
+            }
+
+            .app_in_wrap:last-child {
+                margin-right: 0;
+            }
+
+            .app_icon {
+                width: 8.3333vw;
+                height: 8.3333vw;
+                margin: 0 auto;
+            }
+
+            .app_icon>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .app_name {
+                font-size: 1.875vw;
+                text-align: center;
+                color: #fff;
+                text-shadow: -1px 1px 5px #000;
+            }
+
+            .app_screen {
+                display: none;
+                background-color: #dfe1e4;
+            }
+
+            #home_but {
+                width: 5.2083vw;
+                height: 5.2083vw;
+                position: absolute;
+                bottom: 3%;
+                left: 50%;
+                cursor: pointer;
+            }
+
+            #home_but>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #me_wrap {
+                width: 41.6666vw;
+                height: 75.7916vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -35.2916vw;
+                margin-left: -20.8333vw;
+            }
+
+            #me_img {
+                width: 41.6666vw;
+                height: 41.6666vw;
+            }
+
+            #me_img>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #me_txt_wrap {
+                width: auto;
+                height: auto;
+                display: inline-block;
+                margin-top: 3.125vw;
+            }
+
+            #contact_wrap,
+            #contact_bottom_wrap,
+            .bottom_in_wrap,
+            .con_wrap,
+            #info_wrap,
+            .info_in_wrap,
+            .renwal_txt_wrap,
+            #file_wrap,
+            #file_bottom_wrap {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .app_title_wrap {
+                width: 100%;
+                height: 8.3333vw;
+            }
+
+            #contact_title {
+                font-size: 3.125vw;
+                float: left;
+                margin: 1.8333vw 0 0 40.625vw;
+            }
+
+            #plus {
+                font-size: 4.1666vw;
+                float: right;
+                margin: 0.8333vw 4.1666vw 0 0;
+            }
+
+            #contact_middle_wrap {
+                width: 100%;
+                height: 10.4166vw;
+            }
+
+            #middle_icon {
+                width: 8.3333vw;
+                height: 8.3333vw;
+                font-size: 3.125vw;
+                text-align: center;
+                line-height: 8.3333vw;
+                color: #fff;
+                background-color: #3f4754;
+                border-radius: 40px;
+                float: left;
+                margin: 1.0416vw 2.0833vw 1.0416vw 7.2916vw;
+            }
+
+            #middle_txt {
+                font-size: 1.875vw;
+                line-height: 10.1041vw;
+            }
+
+            .contact_index {
+                width: 100%;
+                height: 3.125vw;
+                background-color: #3f4754;
+                font-size: 1.875vw;
+                color: #fff;
+                padding-left: 2.0833vw;
+                box-sizing: border-box;
+            }
+
+            .con_wrap {
+                padding: 1.0416vw 0 0 2.0833vw;
+                box-sizing: border-box;
+                margin-bottom: 4.1666vw;
+            }
+
+            .bottom_in_wrap:first-child>.con_wrap:nth-child(2) {
+                margin-bottom: 0;
+            }
+
+            .contact_name,
+            .contact_con {
+                font-size: 1.875vw;
+                float: left;
+            }
+
+            .contact_con {
+                font-weight: 300;
+                margin-left: 2.0833vw;
+            }
+
+            #setting_wrap {
+                width: 100%;
+                height: 79.1666vw;
+                position: relative;
+            }
+
+            .app_title {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .app_title,
+            .right_wrap_title {
+                width: 100%;
+                height: 8.3333vw;
+                font-size: 3.125vw;
+                text-align: center;
+                line-height: 8.3333vw;
+                border-bottom: 1px solid #3f4754;
+                box-sizing: border-box;
+            }
+
+            #setting_left_wrap {
+                width: 36.4583vw;
+                height: 82.5vw;
+                border-right: 1px solid #3f4754;
+                box-sizing: border-box;
+                float: left;
+                position: absolute;
+                left: 0;
+                top: 8.3vw;
+            }
+
+            .setting_left_in_wrap {
+                width: auto;
+                height: 5.2083vw;
+                margin: 3.125vw;
+            }
+
+            .setting_left_in_wrap:nth-child(4),
+            .setting_left_in_wrap:nth-child(5) {
+                cursor: pointer;
+            }
+
+            .setting_icon {
+                width: 5.2083vw;
+                height: 5.2083vw;
+                float: left;
+            }
+
+            .setting_icon>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .setting_name {
+                font-size: 1.875vw;
+                line-height: 5.2083vw;
+                margin-left: 2.0833vw;
+                display: inline-block;
+                float: left;
+            }
+
+            .name_wifi {
+                height: 5.2083vw;
+                overflow: hidden;
+            }
+
+            .but_wrap {
+                width: 5.7291vw;
+                height: 2.9166vw;
+                float: right;
+                position: relative;
+                margin-top: 1.1458vw;
+            }
+
+            .but_bar,
+            .circle_but {
+                width: 5.5208vw;
+                height: 2.7083vw;
+                border-radius: 12px;
+                background-color: #fff;
+                border: 1px solid #3f4754;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .circle_but {
+                width: 2.8125vw;
+                height: 2.8125vw;
+                border-radius: 14px;
+                box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+            }
+
+            #setting_middle_bar {
+                width: 100%;
+                height: 4.1666vw;
+                background-color: #eaecf0;
+                margin-bottom: 3.125vw;
+            }
+
+            .setting_right_wrap {
+                width: 53.125vw;
+                height: 70.8333vw;
+                float: left;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                display: none;
+            }
+
+            .app_back {
+                width: 3.3333vw;
+                height: 3.3333vw;
+                float: left;
+                margin: 2.5vw;
+                cursor: pointer;
+            }
+
+            .app_back>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .title_name {
+                float: left;
+                margin: 0 12.5vw;
+            }
+
+            .setting_right_wrap:nth-child(4) .title_name {
+                margin: 0 16.6666vw;
+            }
+
+            #right_wrap_sub_title {
+                width: 47.9166vw;
+                overflow: hidden;
+                font-size: 1.875vw;
+                font-weight: 300;
+                margin: 0 auto;
+                margin-top: 3.125vw;
+            }
+
+            #setting_bg_wrap {
+                width: 47.9166vw;
+                height: 34.375vw;
+                margin: 1.0416vw auto;
+                padding: 2.0833vw 0 0 2.0833vw;
+                box-sizing: border-box;
+                background-color: #fff;
+            }
+
+            .setting_bg {
+                width: 20.8333vw;
+                height: 13.8541vw;
+                float: left;
+                margin: 0 2.0833vw 2.0833vw 0;
+                cursor: pointer;
+            }
+
+            .setting_bg>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #info_wrap {
+                padding: 3.125vw;
+                box-sizing: border-box;
+            }
+
+            .info_in_wrap {
+                margin-bottom: 1.0416vw;
+                font-size: 1.875vw;
+            }
+
+            .info_title {
+                width: 83px;
+                height: auto;
+                float: left;
+            }
+
+            .info_txt {
+                font-weight: 300;
+                margin-left: 4.1666vw;
+                float: left;
+            }
+
+            #app_life {
+                background-color: transparent;
+            }
+
+            #app_life>.app_in_wrap {
+                width: 52.0833vw;
+                float: left;
+                margin-right: 8.8vw;
+                margin-bottom: 10.5263vw;
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -30.2631vw;
+                margin-left: -26.3157vw;
+            }
+
+            #app_life .app_icon {
+                width: 52.0833vw;
+                height: 52.0833vw;
+            }
+
+            #app_life .app_name {
+                font-size: 5.3684vw;
+                text-align: center;
+                color: #fff;
+                text-shadow: -1px 1px 3px #000;
+            }
+
+            #app_graphic_scroll {
+                width: auto;
+                height: 85.8vw;
+                overflow-x: hidden;
+            }
+
+            .graphic_wrap {
+                width: 90%;
+                height: 60%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin: 10% 5%;
+            }
+
+            .graphic_wrap:nth-child(1) {
+                background-image: url(img/polygone_art.jpg);
+            }
+
+            .graphic_wrap:nth-child(2) {
+                background-image: url(img/label.jpg);
+                height: 45%;
+            }
+
+            .graphic_wrap:nth-child(3) {
+                background-image: url(img/illu.jpg);
+            }
+
+            .graphic_wrap:nth-child(4) {
+                background-image: url(img/room.jpg);
+            }
+
+            .graphic_wrap:nth-child(5) {
+                background-image: url(img/sketch.jpg);
+            }
+
+            .graphic_wrap:nth-child(6) {
+                background-image: url(img/neonsign.jpg);
+            }
+
+            .app_graphic_txt {
+                width: 100%;
+                height: 100%;
+                display: none;
+                font-size: 3.3333vw;
+                color: white;
+                padding: 2%;
+                box-sizing: border-box;
+            }
+
+            .portfolio_wrap {
+                width: 62.5vw;
+                overflow: hidden;
+                margin: 1.0416vw auto;
+            }
+
+            .renwal_img {
+                width: 62.5vw;
+                height: 31.7708vw;
+            }
+
+            .renwal_img>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .renwal_txt_left_wrap,
+            .renwal_txt_right_wrap {
+                width: 40%;
+                overflow: hidden;
+                float: left;
+                margin-top: 3.125vw;
+            }
+
+            .renwal_txt_right_wrap {
+                width: 60%;
+                margin-top: 2.7vw;
+            }
+
+            .app_txt_wrap {
+                width: auto;
+                height: auto;
+                margin-bottom: 2.0833vw;
+            }
+
+            .app_txt_title_wrap,
+            #view {
+                width: auto;
+                height: auto;
+                display: inline-block;
+            }
+
+            .app_bar {
+                width: 0.4166vw;
+                height: 2.0833vw;
+                background-color: #333;
+                float: left;
+                margin: 3.5px 1.0416vw 0 0;
+            }
+
+            .app_txt_title {
+                float: left;
+            }
+
+            .app_cont {
+                margin-left: 1.5625vw;
+                font-weight: 300;
+            }
+
+            #view {
+                float: right;
+            }
+
+            #file_top_wrap {
+                width: 100%;
+                height: 8.3333vw;
+                background-color: #e2c221;
+            }
+
+            #file_top_left,
+            #file_top_right {
+                width: auto;
+                height: auto;
+                float: left;
+                margin-left: 4.1666vw;
+                margin-top: 1.8229vw;
+            }
+
+            #menu_but {
+                width: 3.3333vw;
+                height: 2.1875vw;
+                margin: 1.25vw 0;
+            }
+
+            #file_app_name {
+                font-size: 3.125vw;
+                margin-left: 3.125vw;
+            }
+
+            #file_top_right {
+                float: right;
+                margin-top: 2.5vw;
+            }
+
+            #search_but {
+                width: 3.3333vw;
+                height: 3.3333vw;
+            }
+
+            #more_but {
+                width: 0.8333vw;
+                height: 3.3333vw;
+                margin: 0 4.1666vw;
+            }
+
+            #file_top_left>div,
+            #file_top_right>div {
+                float: left;
+            }
+
+            #file_top_wrap img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #file_con {
+                width: 82.8125vw;
+                height: 61.1458vw;
+                margin: 4.1666vw auto;
+            }
+
+            #file_con>img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        /*end*/
+
+    </style>
+    <style>
+        @media all and (max-width:849px) and (min-width:770px) {
+            #monitor {
+                display: none;
+            }
+
+            #bezel {
+                width: 100%;
+                height: 100%;
+                background-image: url(img/tab_border.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                border-radius: 30px;
+            }
+
+            .screen,
+            .app_screen {
+                width: 89.7916vw;
+                height: 95vw;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 6%;
+                left: 50%;
+                border-radius: 10px;
+            }
+
+            #home_screen {
+                background-image: url(img/home_screen.jpg);
+            }
+
+            #home_today {
+                width: auto;
+                height: auto;
+                margin: 5.2083vw;
+                text-align: center;
+                font-size: 40px;
+            }
+
+            #main_screen {
+                display: none;
+                background-color: #eaecf0;
+            }
+
+            .app_top_bar {
+                width: 100%;
+                height: 5.2631vw;
+                background-color: #eaecf0;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            #main_screen>.app_top_bar {
+                background-color: transparent;
+            }
+
+            .status_icon {
+                width: 3.9473vw;
+                height: 2.7631vw;
+                float: left;
+                position: relative;
+                margin: 1.0526vw 2.6315vw;
+            }
+
+            .status_icon>img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+            }
+
+            .top_bar_right {
+                float: right;
+                width: auto;
+                height: 5.2631vw;
+            }
+
+            .battery {
+                width: 4.4736vw;
+                height: 2.3684vw;
+                float: left;
+                margin-top: 1.5vw;
+            }
+
+            .battery>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .time {
+                width: auto;
+                height: 5.2631vw;
+                float: right;
+                font-size: 2.3684vw;
+                text-align: center;
+                line-height: 5.2631vw;
+                color: #fff;
+                text-shadow: -1px 1px 3px #000;
+                margin: 0 5.2631vw 0 2.6315vw
+            }
+
+            #app_wrap {
+                width: auto;
+                overflow: hidden;
+                margin: 5.2631vw;
+            }
+
+            #app_top_wrap,
+            #app_bottom_wrap {
+                width: auto;
+                overflow: hidden;
+            }
+
+            .app_in_wrap {
+                width: 13.1578vw;
+                float: left;
+                margin-right: 8.8vw;
+                margin-bottom: 10.5263vw;
+                cursor: pointer;
+            }
+
+            .app_in_wrap:last-child {
+                margin-right: 0;
+            }
+
+            .app_icon {
+                width: 10.5263vw;
+                height: 10.5263vw;
+                margin: 0 auto;
+            }
+
+            .app_icon>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .app_name {
+                font-size: 2.3684vw;
+                text-align: center;
+                color: #fff;
+                text-shadow: -1px 1px 3px #000;
+            }
+
+            .app_screen {
+                display: none;
+                background-color: #dfe1e4;
+            }
+
+            #home_but {
+                width: 6.5789vw;
+                height: 6.5789vw;
+                position: absolute;
+                bottom: 2%;
+                left: 50%;
+                cursor: pointer;
+            }
+
+            #home_but>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #me_wrap {
+                width: auto;
+                height: auto;
+                display: inline-block;
+                margin: 5.2631vw;
+            }
+
+            #me_img {
+                width: 39.4736vw;
+                height: 39.4736vw;
+            }
+
+            #me_img>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #me_txt_wrap {
+                width: auto;
+                height: auto;
+                display: inline-block;
+                margin-top: 5.2631vw;
+            }
+
+            #contact_wrap,
+            #contact_bottom_wrap,
+            .bottom_in_wrap,
+            .con_wrap,
+            #info_wrap,
+            .info_in_wrap,
+            .renwal_txt_wrap,
+            #file_wrap,
+            #file_bottom_wrap {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .app_title_wrap {
+                width: 100%;
+                height: 10.5263vw;
+            }
+
+            #contact_title {
+                font-size: 3.9473vw;
+                float: left;
+                margin: 2.3157vw 0 0 40vw;
+            }
+
+            #plus {
+                font-size: 5.2631vw;
+                float: right;
+                margin: 1.0526vw 5.2631vw 0 0;
+            }
+
+            #contact_middle_wrap {
+                width: 100%;
+                height: 13.1578vw;
+            }
+
+            #middle_icon {
+                width: 10.5263vw;
+                height: 10.5263vw;
+                font-size: 3.9473vw;
+                text-align: center;
+                line-height: 10.5263vw;
+                color: #fff;
+                background-color: #3f4754;
+                border-radius: 40px;
+                float: left;
+                margin: 1.3157vw 2.6315vw 1.3157vw 9.2105vw;
+            }
+
+            #middle_txt {
+                font-size: 2.3684vw;
+                line-height: 12.7631vw;
+            }
+
+            .contact_index {
+                width: 100%;
+                height: 3.9473vw;
+                background-color: #3f4754;
+                font-size: 2.3684vw;
+                color: #fff;
+                padding-left: 2.6315vw;
+                box-sizing: border-box;
+            }
+
+            .con_wrap {
+                padding: 1.3157vw 0 0 2.6315vw;
+                box-sizing: border-box;
+                margin-bottom: 5.2631vw;
+            }
+
+            .bottom_in_wrap:first-child>.con_wrap:nth-child(2) {
+                margin-bottom: 0;
+            }
+
+            .contact_name,
+            .contact_con {
+                font-size: 2.3684vw;
+                float: left;
+            }
+
+            .contact_con {
+                font-weight: 300;
+                margin-left: 2.6315vw;
+            }
+
+            #setting_wrap {
+                width: 100%;
+                height: 79.1666vw;
+                position: relative;
+            }
+
+            .app_title,
+            .right_wrap_title {
+                width: 100%;
+                height: 10.5263vw;
+                font-size: 3.9473vw;
+                text-align: center;
+                line-height: 10.5263vw;
+                border-bottom: 1px solid #3f4754;
+                box-sizing: border-box;
+            }
+
+            #setting_left_wrap {
+                width: 100%;
+                height: 70.8333vw;
+                border-right: 1px solid #3f4754;
+                box-sizing: border-box;
+                float: left;
+            }
+
+            .setting_left_in_wrap {
+                width: auto;
+                height: 6.5789vw;
+                margin: 3.9473vw;
+            }
+
+            .setting_left_in_wrap:nth-child(4),
+            .setting_left_in_wrap:nth-child(5) {
+                cursor: pointer;
+            }
+
+            .setting_icon {
+                width: 6.5789vw;
+                height: 6.5789vw;
+                float: left;
+            }
+
+            .setting_icon>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .setting_name {
+                font-size: 2.3684vw;
+                line-height: 6.5789vw;
+                margin-left: 2.6315vw;
+                display: inline-block;
+                float: left;
+            }
+
+            .name_wifi {
+                height: 6.5789vw;
+                overflow: hidden;
+            }
+
+            .but_wrap {
+                width: 7.2368vw;
+                height: 3.6842vw;
+                float: right;
+                position: relative;
+                margin-top: 1.4473vw;
+            }
+
+            .but_bar,
+            .circle_but {
+                width: 6.9736vw;
+                height: 3.4210vw;
+                border-radius: 12px;
+                background-color: #fff;
+                border: 1px solid #3f4754;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .circle_but {
+                width: 3.5526vw;
+                height: 3.5526vw;
+                border-radius: 14px;
+                box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+            }
+
+            #setting_middle_bar {
+                width: 100%;
+                height: 5.2631vw;
+                background-color: #eaecf0;
+                margin-bottom: 3.9473vw;
+            }
+
+            .setting_right_wrap {
+                width: 100%;
+                height: 70.8333vw;
+                float: left;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                background-color: #dfe1e4;
+            }
+
+            .app_back {
+                width: 4.2105vw;
+                height: 4.2105vw;
+                float: left;
+                margin: 3.1578vw;
+                cursor: pointer;
+            }
+
+            .app_back>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .title_name {
+                float: left;
+                margin: 0 28vw;
+            }
+
+            .setting_right_wrap:nth-child(4) .title_name {
+                margin: 0 32vw;
+            }
+
+            #right_wrap_sub_title {
+                width: 60.5263vw;
+                overflow: hidden;
+                font-size: 2.3684vw;
+                font-weight: 300;
+                margin: 0 auto;
+                margin-top: 3.9473vw;
+            }
+
+            #setting_bg_wrap {
+                width: 60.5263vw;
+                height: 43.4210vw;
+                margin: 1.3157vw auto;
+                padding: 2.6315vw 0 0 2.6315vw;
+                box-sizing: border-box;
+                background-color: #fff;
+            }
+
+            .setting_bg {
+                width: 26.3157vw;
+                height: 17.5vw;
+                float: left;
+                margin: 0 2.6315vw 2.6315vw 0;
+                cursor: pointer;
+            }
+
+            .setting_bg>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #info_wrap {
+                padding: 3.9473vw;
+                box-sizing: border-box;
+            }
+
+            .info_in_wrap {
+                margin-bottom: 1.3157vw;
+                font-size: 2.3684vw;
+            }
+
+            .info_title {
+                width: 83px;
+                height: auto;
+                float: left;
+            }
+
+            .info_txt {
+                font-weight: 300;
+                margin-left: 5.2631vw;
+                float: left;
+            }
+
+            #app_life {
+                background-color: transparent;
+            }
+
+            #app_life>.app_in_wrap {
+                width: 52.6315vw;
+                float: left;
+                margin-right: 8.8vw;
+                margin-bottom: 10.5263vw;
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -30.2631vw;
+                margin-left: -26.3157vw;
+            }
+
+            #app_life .app_icon {
+                width: 52.6315vw;
+                height: 52.6315vw;
+            }
+
+            #app_life .app_name {
+                font-size: 5.3684vw;
+                text-align: center;
+                color: #fff;
+                text-shadow: -1px 1px 3px #000;
+            }
+
+            #app_graphic_scroll {
+                width: auto;
+                height: 89.8vw;
+                overflow-x: hidden;
+            }
+
+            .graphic_wrap {
+                width: 90%;
+                height: 60%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin: 10% 5%;
+            }
+
+            .graphic_wrap:nth-child(1) {
+                background-image: url(img/polygone_art.jpg);
+            }
+
+            .graphic_wrap:nth-child(2) {
+                background-image: url(img/label.jpg);
+                height: 45%;
+            }
+
+            .graphic_wrap:nth-child(3) {
+                background-image: url(img/illu.jpg);
+            }
+
+            .graphic_wrap:nth-child(4) {
+                background-image: url(img/room.jpg);
+            }
+
+            .graphic_wrap:nth-child(5) {
+                background-image: url(img/sketch.jpg);
+            }
+
+            .graphic_wrap:nth-child(6) {
+                background-image: url(img/neonsign.jpg);
+            }
+
+            .app_graphic_txt {
+                width: 100%;
+                height: 100%;
+                display: none;
+                font-size: 3.5294vw;
+                color: white;
+                padding: 2%;
+                box-sizing: border-box;
+            }
+
+            .portfolio_wrap {
+                width: 78.9473vw;
+                overflow: hidden;
+                margin: 1.3157vw auto;
+            }
+
+            .renwal_img {
+                width: 78.9473vw;
+                height: 40.1315vw;
+            }
+
+            .renwal_img>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .renwal_txt_left_wrap,
+            .renwal_txt_right_wrap {
+                width: 40%;
+                overflow: hidden;
+                float: left;
+                margin-top: 3.9473vw;
+            }
+
+            .renwal_txt_right_wrap {
+                width: 60%;
+                margin-top: 2.7vw;
+            }
+
+            .app_txt_wrap {
+                width: auto;
+                height: auto;
+                margin-bottom: 2.6315vw;
+            }
+
+            #hanwha_app_txt_wrap,
+            #garglin_app_txt_wrap {
+                display: none;
+            }
+
+            .app_txt_title_wrap,
+            #view {
+                width: auto;
+                height: auto;
+                display: inline-block;
+            }
+
+            .app_bar {
+                width: 0.5263vw;
+                height: 2.6315vw;
+                background-color: #333;
+                float: left;
+                margin: 3.5px 1.3157vw 0 0;
+            }
+
+            .app_txt_title {
+                float: left;
+            }
+
+            .app_cont {
+                margin-left: 1.9736vw;
+                font-weight: 300;
+            }
+
+            #view {
+                float: right;
+            }
+
+            #file_top_wrap {
+                width: 100%;
+                height: 10.5263vw;
+                background-color: #e2c221;
+            }
+
+            #file_top_left,
+            #file_top_right {
+                width: auto;
+                height: auto;
+                float: left;
+                margin-left: 5.2631vw;
+                margin-top: 2.3026vw;
+            }
+
+            #menu_but {
+                width: 4.2105vw;
+                height: 2.7631vw;
+                margin: 1.5789vw 0;
+            }
+
+            #file_app_name {
+                font-size: 3.9473vw;
+                margin-left: 3.9473vw;
+            }
+
+            #file_top_right {
+                float: right;
+                margin-top: 3.1578vw;
+            }
+
+            #search_but {
+                width: 4.2105vw;
+                height: 4.2105vw;
+            }
+
+            #more_but {
+                width: 1.0526vw;
+                height: 4.2105vw;
+                margin: 0 5.2631vw;
+            }
+
+            #file_top_left>div,
+            #file_top_right>div {
+                float: left;
+            }
+
+            #file_top_wrap img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #file_con {
+                width: 82.8125vw;
+                height: 61.1458vw;
+                margin: 5.2631vw auto;
+            }
+
+            #file_con>img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        /*end*/
+
+    </style>
+    <style>
+        @media all and (max-width:759px) and (min-width:700px) {
+            #monitor {
+                display: none;
+            }
+
+            #bezel {
+                width: 100%;
+                height: 100%;
+                background-image: url(img/tab_border.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                border-radius: 30px;
+            }
+
+            .screen,
+            .app_screen {
+                width: 89.7916vw;
+                height: 105vw;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 6%;
+                left: 50%;
+                border-radius: 10px;
+            }
+
+            #home_screen {
+                background-image: url(img/home_screen.jpg);
+            }
+
+            #home_today {
+                width: auto;
+                height: auto;
+                margin: 6.5789vw;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            #main_screen {
+                background-color: #eaecf0;
+                display: none;
+            }
+
+            .app_top_bar {
+                width: 100%;
+                height: 5.2631vw;
+                background-color: #eaecf0;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            #main_screen>.app_top_bar {
+                background-color: transparent;
+            }
+
+            .status_icon {
+                width: 3.9473vw;
+                height: 2.7631vw;
+                float: left;
+                position: relative;
+                margin: 1.0526vw 2.6315vw;
+            }
+
+            .status_icon>img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+            }
+
+            .top_bar_right {
+                float: right;
+                width: auto;
+                height: 5.2631vw;
+            }
+
+            .battery {
+                width: 4.4736vw;
+                height: 2.3684vw;
+                float: left;
+                margin-top: 1.5vw;
+            }
+
+            .battery>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .time {
+                width: auto;
+                height: 5.2631vw;
+                float: right;
+                font-size: 2.3684vw;
+                text-align: center;
+                line-height: 5.2631vw;
+                color: #fff;
+                text-shadow: -1px 1px 3px #000;
+                margin: 0 5.2631vw 0 2.6315vw
+            }
+
+            #app_wrap {
+                width: auto;
+                overflow: hidden;
+                margin: 5.2631vw;
+            }
+
+            #app_top_wrap,
+            #app_bottom_wrap {
+                width: auto;
+                overflow: hidden;
+            }
+
+            .app_in_wrap {
+                width: 13.1578vw;
+                float: left;
+                margin-right: 8.8vw;
+                margin-bottom: 10.5263vw;
+                cursor: pointer;
+            }
+
+            .app_in_wrap:last-child {
+                margin-right: 0;
+            }
+
+            .app_icon {
+                width: 10.5263vw;
+                height: 10.5263vw;
+                margin: 0 auto;
+            }
+
+            .app_icon>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .app_name {
+                font-size: 2.3684vw;
+                text-align: center;
+                color: #fff;
+                text-shadow: -1px 1px 3px #000;
+            }
+
+            .app_screen {
+                display: none;
+                background-color: #dfe1e4;
+            }
+
+            #home_but {
+                width: 6.5789vw;
+                height: 6.5789vw;
+                position: absolute;
+                bottom: 4%;
+                left: 50%;
+                cursor: pointer;
+            }
+
+            #home_but>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #me_wrap {
+                width: auto;
+                height: auto;
+                display: inline-block;
+                margin: 5.2631vw;
+            }
+
+            #me_img {
+                width: 39.4736vw;
+                height: 39.4736vw;
+            }
+
+            #me_img>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #me_txt_wrap {
+                width: auto;
+                height: auto;
+                display: inline-block;
+                margin-top: 5.2631vw;
+            }
+
+            #contact_wrap,
+            #contact_bottom_wrap,
+            .bottom_in_wrap,
+            .con_wrap,
+            #info_wrap,
+            .info_in_wrap,
+            .renwal_txt_wrap,
+            #file_wrap,
+            #file_bottom_wrap {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .app_title_wrap {
+                width: 100%;
+                height: 10.5263vw;
+            }
+
+            #contact_title {
+                font-size: 3.9473vw;
+                float: left;
+                margin: 2.3157vw 0 0 40vw;
+            }
+
+            #plus {
+                font-size: 5.2631vw;
+                float: right;
+                margin: 1.0526vw 5.2631vw 0 0;
+            }
+
+            #contact_middle_wrap {
+                width: 100%;
+                height: 13.1578vw;
+            }
+
+            #middle_icon {
+                width: 10.5263vw;
+                height: 10.5263vw;
+                font-size: 3.9473vw;
+                text-align: center;
+                line-height: 10.5263vw;
+                color: #fff;
+                background-color: #3f4754;
+                border-radius: 40px;
+                float: left;
+                margin: 1.3157vw 2.6315vw 1.3157vw 9.2105vw;
+            }
+
+            #middle_txt {
+                font-size: 2.3684vw;
+                line-height: 12.7631vw;
+            }
+
+            .contact_index {
+                width: 100%;
+                height: 3.9473vw;
+                background-color: #3f4754;
+                font-size: 2.3684vw;
+                color: #fff;
+                padding-left: 2.6315vw;
+                box-sizing: border-box;
+            }
+
+            .con_wrap {
+                padding: 1.3157vw 0 0 2.6315vw;
+                box-sizing: border-box;
+                margin-bottom: 5.2631vw;
+            }
+
+            .bottom_in_wrap:first-child>.con_wrap:nth-child(2) {
+                margin-bottom: 0;
+            }
+
+            .contact_name,
+            .contact_con {
+                font-size: 2.3684vw;
+                float: left;
+            }
+
+            .contact_con {
+                font-weight: 300;
+                margin-left: 2.6315vw;
+            }
+
+            #setting_wrap {
+                width: 100%;
+                height: 79.1666vw;
+                position: relative;
+            }
+
+            .app_title,
+            .right_wrap_title {
+                width: 100%;
+                height: 10.5263vw;
+                font-size: 3.9473vw;
+                text-align: center;
+                line-height: 10.5263vw;
+                border-bottom: 1px solid #3f4754;
+                box-sizing: border-box;
+            }
+
+            #setting_left_wrap {
+                width: 100%;
+                height: 70.8333vw;
+                border-right: 1px solid #3f4754;
+                box-sizing: border-box;
+                float: left;
+            }
+
+            .setting_left_in_wrap {
+                width: auto;
+                height: 6.5789vw;
+                margin: 3.9473vw;
+            }
+
+            .setting_left_in_wrap:nth-child(4),
+            .setting_left_in_wrap:nth-child(5) {
+                cursor: pointer;
+            }
+
+            .setting_icon {
+                width: 6.5789vw;
+                height: 6.5789vw;
+                float: left;
+            }
+
+            .setting_icon>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .setting_name {
+                font-size: 2.3684vw;
+                line-height: 6.5789vw;
+                margin-left: 2.6315vw;
+                display: inline-block;
+                float: left;
+            }
+
+            .name_wifi {
+                height: 6.5789vw;
+                overflow: hidden;
+            }
+
+            .but_wrap {
+                width: 7.2368vw;
+                height: 3.6842vw;
+                float: right;
+                position: relative;
+                margin-top: 1.4473vw;
+            }
+
+            .but_bar,
+            .circle_but {
+                width: 6.9736vw;
+                height: 3.4210vw;
+                border-radius: 12px;
+                background-color: #fff;
+                border: 1px solid #3f4754;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .circle_but {
+                width: 3.5526vw;
+                height: 3.5526vw;
+                border-radius: 14px;
+                box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+            }
+
+            #setting_middle_bar {
+                width: 100%;
+                height: 5.2631vw;
+                background-color: #eaecf0;
+                margin-bottom: 3.9473vw;
+            }
+
+            .setting_right_wrap {
+                width: 100%;
+                height: 70.8333vw;
+                float: left;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                background-color: #dfe1e4;
+            }
+
+            .app_back {
+                width: 4.2105vw;
+                height: 4.2105vw;
+                float: left;
+                margin: 3.1578vw;
+                cursor: pointer;
+            }
+
+            .app_back>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .title_name {
+                float: left;
+                margin: 0 28vw;
+            }
+
+            .setting_right_wrap:nth-child(4) .title_name {
+                margin: 0 32vw;
+            }
+
+            #right_wrap_sub_title {
+                width: 60.5263vw;
+                overflow: hidden;
+                font-size: 2.3684vw;
+                font-weight: 300;
+                margin: 0 auto;
+                margin-top: 3.9473vw;
+            }
+
+            #setting_bg_wrap {
+                width: 60.5263vw;
+                height: 43.4210vw;
+                margin: 1.3157vw auto;
+                padding: 2.6315vw 0 0 2.6315vw;
+                box-sizing: border-box;
+                background-color: #fff;
+            }
+
+            .setting_bg {
+                width: 26.3157vw;
+                height: 17.5vw;
+                float: left;
+                margin: 0 2.6315vw 2.6315vw 0;
+                cursor: pointer;
+            }
+
+            .setting_bg>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #info_wrap {
+                padding: 3.9473vw;
+                box-sizing: border-box;
+            }
+
+            .info_in_wrap {
+                margin-bottom: 1.3157vw;
+                font-size: 2.3684vw;
+            }
+
+            .info_title {
+                width: 83px;
+                height: auto;
+                float: left;
+            }
+
+            .info_txt {
+                font-weight: 300;
+                margin-left: 5.2631vw;
+                float: left;
+            }
+
+            #app_life {
+                background-color: transparent;
+            }
+
+            #app_life>.app_in_wrap {
+                width: 52.6315vw;
+                float: left;
+                margin-right: 8.8vw;
+                margin-bottom: 10.5263vw;
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -30.2631vw;
+                margin-left: -26.3157vw;
+            }
+
+            #app_life .app_icon {
+                width: 52.6315vw;
+                height: 52.6315vw;
+            }
+
+            #app_life .app_name {
+                font-size: 5.3684vw;
+                text-align: center;
+                color: #fff;
+                text-shadow: -1px 1px 3px #000;
+            }
+
+            #app_graphic_scroll {
+                width: auto;
+                height: 99.8vw;
+                overflow-x: hidden;
+            }
+
+            .graphic_wrap {
+                width: 90%;
+                height: 60%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin: 10% 5%;
+            }
+
+            .graphic_wrap:nth-child(1) {
+                background-image: url(img/polygone_art.jpg);
+            }
+
+            .graphic_wrap:nth-child(2) {
+                background-image: url(img/label.jpg);
+                height: 45%;
+            }
+
+            .graphic_wrap:nth-child(3) {
+                background-image: url(img/illu.jpg);
+            }
+
+            .graphic_wrap:nth-child(4) {
+                background-image: url(img/room.jpg);
+            }
+
+            .graphic_wrap:nth-child(5) {
+                background-image: url(img/sketch.jpg);
+            }
+
+            .graphic_wrap:nth-child(6) {
+                background-image: url(img/neonsign.jpg);
+            }
+
+            .app_graphic_txt {
+                width: 100%;
+                height: 100%;
+                display: none;
+                font-size: 3.9473vw;
+                color: white;
+                padding: 2%;
+                box-sizing: border-box;
+            }
+
+            .portfolio_wrap {
+                width: 78.9473vw;
+                overflow: hidden;
+                margin: 1.3157vw auto;
+            }
+
+            .renwal_img {
+                width: 78.9473vw;
+                height: 40.1315vw;
+            }
+
+            .renwal_img>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .renwal_txt_left_wrap,
+            .renwal_txt_right_wrap {
+                width: 40%;
+                overflow: hidden;
+                float: left;
+                margin-top: 3.9473vw;
+            }
+
+            .renwal_txt_right_wrap {
+                width: 60%;
+                margin-top: 2.7vw;
+            }
+
+            .app_txt_wrap {
+                width: auto;
+                height: auto;
+                margin-bottom: 2.6315vw;
+            }
+
+            #hanwha_app_txt_wrap,
+            #garglin_app_txt_wrap {
+                display: none;
+            }
+
+            .app_txt_title_wrap,
+            #view {
+                width: auto;
+                height: auto;
+                display: inline-block;
+            }
+
+            .app_bar {
+                width: 0.5263vw;
+                height: 2.6315vw;
+                background-color: #333;
+                float: left;
+                margin: 3.5px 1.3157vw 0 0;
+            }
+
+            .app_txt_title {
+                float: left;
+            }
+
+            .app_cont {
+                margin-left: 1.9736vw;
+                font-weight: 300;
+            }
+
+            #view {
+                float: right;
+            }
+
+            #file_top_wrap {
+                width: 100%;
+                height: 10.5263vw;
+                background-color: #e2c221;
+            }
+
+            #file_top_left,
+            #file_top_right {
+                width: auto;
+                height: auto;
+                float: left;
+                margin-left: 5.2631vw;
+                margin-top: 2.3026vw;
+            }
+
+            #menu_but {
+                width: 4.2105vw;
+                height: 2.7631vw;
+                margin: 1.5789vw 0;
+            }
+
+            #file_app_name {
+                font-size: 3.9473vw;
+                margin-left: 3.9473vw;
+            }
+
+            #file_top_right {
+                float: right;
+                margin-top: 3.1578vw;
+            }
+
+            #search_but {
+                width: 4.2105vw;
+                height: 4.2105vw;
+            }
+
+            #more_but {
+                width: 1.0526vw;
+                height: 4.2105vw;
+                margin: 0 5.2631vw;
+            }
+
+            #file_top_left>div,
+            #file_top_right>div {
+                float: left;
+            }
+
+            #file_top_wrap img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #file_con {
+                width: 82.8125vw;
+                height: 61.1458vw;
+                margin: 5.2631vw auto;
+            }
+
+            #file_con>img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        /*end*/
+
+    </style>
+    <style>
+        @media all and (max-width:699px) and (min-width:660px) {
+            #monitor {
+                display: none;
+            }
+
+            #bezel {
+                width: 100%;
+                height: 100%;
+                background-image: url(img/tab_border.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                border-radius: 30px;
+            }
+
+            .screen,
+            .app_screen {
+                width: 89.7916vw;
+                height: 110vw;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                border-radius: 10px;
+            }
+
+            #home_screen {
+                background-image: url(img/home_screen.jpg);
+            }
+
+            #home_today {
+                width: auto;
+                height: auto;
+                margin: 6.5789vw;
+                text-align: center;
+                font-size: 30px;
+            }
+
+            #main_screen {
+                background-color: #eaecf0;
+                display: none;
+            }
+
+            .app_top_bar {
+                width: 100%;
+                height: 5.2631vw;
+                background-color: #eaecf0;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            #main_screen>.app_top_bar {
+                background-color: transparent;
+            }
+
+            .status_icon {
+                width: 3.9473vw;
+                height: 2.7631vw;
+                float: left;
+                position: relative;
+                margin: 1.0526vw 2.6315vw;
+            }
+
+            .status_icon>img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+            }
+
+            .top_bar_right {
+                float: right;
+                width: auto;
+                height: 5.2631vw;
+            }
+
+            .battery {
+                width: 4.4736vw;
+                height: 2.3684vw;
+                float: left;
+                margin-top: 1.5vw;
+            }
+
+            .battery>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .time {
+                width: auto;
+                height: 5.2631vw;
+                float: right;
+                font-size: 2.3684vw;
+                text-align: center;
+                line-height: 5.2631vw;
+                color: #fff;
+                text-shadow: -1px 1px 3px #000;
+                margin: 0 5.2631vw 0 2.6315vw
+            }
+
+            #app_wrap {
+                width: auto;
+                overflow: hidden;
+                margin: 5.2631vw;
+            }
+
+            #app_top_wrap,
+            #app_bottom_wrap {
+                width: auto;
+                overflow: hidden;
+            }
+
+            .app_in_wrap {
+                width: 13.1578vw;
+                float: left;
+                margin-right: 8.8vw;
+                margin-bottom: 10.5263vw;
+                cursor: pointer;
+            }
+
+            .app_in_wrap:last-child {
+                margin-right: 0;
+            }
+
+            .app_icon {
+                width: 10.5263vw;
+                height: 10.5263vw;
+                margin: 0 auto;
+            }
+
+            .app_icon>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .app_name {
+                font-size: 2.3684vw;
+                text-align: center;
+                color: #fff;
+                text-shadow: -1px 1px 3px #000;
+            }
+
+            .app_screen {
+                display: none;
+                background-color: #dfe1e4;
+            }
+
+            #home_but {
+                width: 6.5789vw;
+                height: 6.5789vw;
+                position: absolute;
+                bottom: 4%;
+                left: 50%;
+                cursor: pointer;
+            }
+
+            #home_but>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #me_wrap {
+                width: auto;
+                height: auto;
+                display: inline-block;
+                margin: 5.2631vw;
+            }
+
+            #me_img {
+                width: 39.4736vw;
+                height: 39.4736vw;
+            }
+
+            #me_img>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #me_txt_wrap {
+                width: auto;
+                height: auto;
+                display: inline-block;
+                margin-top: 5.2631vw;
+            }
+
+            #contact_wrap,
+            #contact_bottom_wrap,
+            .bottom_in_wrap,
+            .con_wrap,
+            #info_wrap,
+            .info_in_wrap,
+            .renwal_txt_wrap,
+            #file_wrap,
+            #file_bottom_wrap {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .app_title_wrap {
+                width: 100%;
+                height: 10.5263vw;
+            }
+
+            #contact_title {
+                font-size: 3.9473vw;
+                float: left;
+                margin: 2.3157vw 0 0 40vw;
+            }
+
+            #plus {
+                font-size: 5.2631vw;
+                float: right;
+                margin: 1.0526vw 5.2631vw 0 0;
+            }
+
+            #contact_middle_wrap {
+                width: 100%;
+                height: 13.1578vw;
+            }
+
+            #middle_icon {
+                width: 10.5263vw;
+                height: 10.5263vw;
+                font-size: 3.9473vw;
+                text-align: center;
+                line-height: 10.5263vw;
+                color: #fff;
+                background-color: #3f4754;
+                border-radius: 40px;
+                float: left;
+                margin: 1.3157vw 2.6315vw 1.3157vw 9.2105vw;
+            }
+
+            #middle_txt {
+                font-size: 2.3684vw;
+                line-height: 12.7631vw;
+            }
+
+            .contact_index {
+                width: 100%;
+                height: 3.9473vw;
+                background-color: #3f4754;
+                font-size: 2.3684vw;
+                color: #fff;
+                padding-left: 2.6315vw;
+                box-sizing: border-box;
+            }
+
+            .con_wrap {
+                padding: 1.3157vw 0 0 2.6315vw;
+                box-sizing: border-box;
+                margin-bottom: 5.2631vw;
+            }
+
+            .bottom_in_wrap:first-child>.con_wrap:nth-child(2) {
+                margin-bottom: 0;
+            }
+
+            .contact_name,
+            .contact_con {
+                font-size: 2.3684vw;
+                float: left;
+            }
+
+            .contact_con {
+                font-weight: 300;
+                margin-left: 2.6315vw;
+            }
+
+            #setting_wrap {
+                width: 100%;
+                height: 79.1666vw;
+                position: relative;
+            }
+
+            .app_title,
+            .right_wrap_title {
+                width: 100%;
+                height: 10.5263vw;
+                font-size: 3.9473vw;
+                text-align: center;
+                line-height: 10.5263vw;
+                border-bottom: 1px solid #3f4754;
+                box-sizing: border-box;
+            }
+
+            #setting_left_wrap {
+                width: 100%;
+                height: 70.8333vw;
+                border-right: 1px solid #3f4754;
+                box-sizing: border-box;
+                float: left;
+            }
+
+            .setting_left_in_wrap {
+                width: auto;
+                height: 6.5789vw;
+                margin: 3.9473vw;
+            }
+
+            .setting_left_in_wrap:nth-child(4),
+            .setting_left_in_wrap:nth-child(5) {
+                cursor: pointer;
+            }
+
+            .setting_icon {
+                width: 6.5789vw;
+                height: 6.5789vw;
+                float: left;
+            }
+
+            .setting_icon>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .setting_name {
+                font-size: 2.3684vw;
+                line-height: 6.5789vw;
+                margin-left: 2.6315vw;
+                display: inline-block;
+                float: left;
+            }
+
+            .name_wifi {
+                height: 6.5789vw;
+                overflow: hidden;
+            }
+
+            .but_wrap {
+                width: 7.2368vw;
+                height: 3.6842vw;
+                float: right;
+                position: relative;
+                margin-top: 1.4473vw;
+            }
+
+            .but_bar,
+            .circle_but {
+                width: 6.9736vw;
+                height: 3.4210vw;
+                border-radius: 12px;
+                background-color: #fff;
+                border: 1px solid #3f4754;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .circle_but {
+                width: 3.5526vw;
+                height: 3.5526vw;
+                border-radius: 14px;
+                box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+            }
+
+            #setting_middle_bar {
+                width: 100%;
+                height: 5.2631vw;
+                background-color: #eaecf0;
+                margin-bottom: 3.9473vw;
+            }
+
+            .setting_right_wrap {
+                width: 100%;
+                height: 70.8333vw;
+                float: left;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                background-color: #dfe1e4;
+            }
+
+            .app_back {
+                width: 4.2105vw;
+                height: 4.2105vw;
+                float: left;
+                margin: 3.1578vw;
+                cursor: pointer;
+            }
+
+            .app_back>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .title_name {
+                float: left;
+                margin: 0 28vw;
+            }
+
+            .setting_right_wrap:nth-child(4) .title_name {
+                margin: 0 32vw;
+            }
+
+            #right_wrap_sub_title {
+                width: 60.5263vw;
+                overflow: hidden;
+                font-size: 2.3684vw;
+                font-weight: 300;
+                margin: 0 auto;
+                margin-top: 3.9473vw;
+            }
+
+            #setting_bg_wrap {
+                width: 60.5263vw;
+                height: 43.4210vw;
+                margin: 1.3157vw auto;
+                padding: 2.6315vw 0 0 2.6315vw;
+                box-sizing: border-box;
+                background-color: #fff;
+            }
+
+            .setting_bg {
+                width: 26.3157vw;
+                height: 17.5vw;
+                float: left;
+                margin: 0 2.6315vw 2.6315vw 0;
+                cursor: pointer;
+            }
+
+            .setting_bg>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #info_wrap {
+                padding: 3.9473vw;
+                box-sizing: border-box;
+            }
+
+            .info_in_wrap {
+                margin-bottom: 1.3157vw;
+                font-size: 2.3684vw;
+            }
+
+            .info_title {
+                width: 83px;
+                height: auto;
+                float: left;
+            }
+
+            .info_txt {
+                font-weight: 300;
+                margin-left: 5.2631vw;
+                float: left;
+            }
+
+            #app_life {
+                background-color: transparent;
+            }
+
+            #app_life>.app_in_wrap {
+                width: 52.6315vw;
+                float: left;
+                margin-right: 8.8vw;
+                margin-bottom: 10.5263vw;
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -30.2631vw;
+                margin-left: -26.3157vw;
+            }
+
+            #app_life .app_icon {
+                width: 52.6315vw;
+                height: 52.6315vw;
+            }
+
+            #app_life .app_name {
+                font-size: 5.3684vw;
+                text-align: center;
+                color: #fff;
+                text-shadow: -1px 1px 3px #000;
+            }
+
+            #app_graphic_scroll {
+                width: auto;
+                height: 104.8vw;
+                overflow-x: hidden;
+            }
+
+            .graphic_wrap {
+                width: 90%;
+                height: 60%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin: 10% 5%;
+            }
+
+            .graphic_wrap:nth-child(1) {
+                background-image: url(img/polygone_art.jpg);
+            }
+
+            .graphic_wrap:nth-child(2) {
+                background-image: url(img/label.jpg);
+                height: 45%;
+            }
+
+            .graphic_wrap:nth-child(3) {
+                background-image: url(img/illu.jpg);
+            }
+
+            .graphic_wrap:nth-child(4) {
+                background-image: url(img/room.jpg);
+            }
+
+            .graphic_wrap:nth-child(5) {
+                background-image: url(img/sketch.jpg);
+            }
+
+            .graphic_wrap:nth-child(6) {
+                background-image: url(img/neonsign.jpg);
+            }
+
+            .app_graphic_txt {
+                width: 100%;
+                height: 100%;
+                display: none;
+                font-size: 4.2857vw;
+                color: white;
+                padding: 2%;
+                box-sizing: border-box;
+            }
+
+            .portfolio_wrap {
+                width: 78.9473vw;
+                overflow: hidden;
+                margin: 1.3157vw auto;
+            }
+
+            .renwal_img {
+                width: 78.9473vw;
+                height: 40.1315vw;
+            }
+
+            .renwal_img>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .renwal_txt_left_wrap,
+            .renwal_txt_right_wrap {
+                width: 40%;
+                overflow: hidden;
+                float: left;
+                margin-top: 3.9473vw;
+            }
+
+            .renwal_txt_right_wrap {
+                width: 60%;
+                margin-top: 2.7vw;
+            }
+
+            .app_txt_wrap {
+                width: auto;
+                height: auto;
+                margin-bottom: 2.6315vw;
+            }
+
+            #hanwha_app_txt_wrap,
+            #garglin_app_txt_wrap {
+                display: none;
+            }
+
+            .app_txt_title_wrap,
+            #view {
+                width: auto;
+                height: auto;
+                display: inline-block;
+            }
+
+            .app_bar {
+                width: 0.5263vw;
+                height: 2.6315vw;
+                background-color: #333;
+                float: left;
+                margin: 3.5px 1.3157vw 0 0;
+            }
+
+            .app_txt_title {
+                float: left;
+            }
+
+            .app_cont {
+                margin-left: 1.9736vw;
+                font-weight: 300;
+            }
+
+            #view {
+                float: right;
+            }
+
+            #file_top_wrap {
+                width: 100%;
+                height: 10.5263vw;
+                background-color: #e2c221;
+            }
+
+            #file_top_left,
+            #file_top_right {
+                width: auto;
+                height: auto;
+                float: left;
+                margin-left: 5.2631vw;
+                margin-top: 2.3026vw;
+            }
+
+            #menu_but {
+                width: 4.2105vw;
+                height: 2.7631vw;
+                margin: 1.5789vw 0;
+            }
+
+            #file_app_name {
+                font-size: 3.9473vw;
+                margin-left: 3.9473vw;
+            }
+
+            #file_top_right {
+                float: right;
+                margin-top: 3.1578vw;
+            }
+
+            #search_but {
+                width: 4.2105vw;
+                height: 4.2105vw;
+            }
+
+            #more_but {
+                width: 1.0526vw;
+                height: 4.2105vw;
+                margin: 0 5.2631vw;
+            }
+
+            #file_top_left>div,
+            #file_top_right>div {
+                float: left;
+            }
+
+            #file_top_wrap img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #file_con {
+                width: 82.8125vw;
+                height: 61.1458vw;
+                margin: 5.2631vw auto;
+            }
+
+            #file_con>img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        /*end*/
+
+    </style>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="css/pc.css" type="text/css" rel="stylesheet">
+    <link href="css/note.css" type="text/css" rel="stylesheet">
+    <link href="css/tab.css" type="text/css" rel="stylesheet">
+    <link href="css/m.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script_2.js"></script>
+</head>
+
+<body>
+    <div id="monitor">
+        <div id="border">
+            <div id="loading"></div>
+            <div id="copy">ⓒ 2018. HR All rights reserved.</div>
+        </div>
+        <div class="bg" id="main"></div>
+        <div id="mask">
+            <div id="slide_wrap">
+                <div id="bg_white">
+                    <div id="wrap">
+                        <div class="in_wrap">
+                            <div class="icon" id="icon_1">
+                                <img src="img/computer.png" alt="icons" />
+                            </div>
+                            <div class="name">내 포트폴리오</div>
+                        </div>
+                        <div class="in_wrap">
+                            <div class="icon" id="icon_2">
+                                <img src="img/setting.png" alt="icons" />
+                            </div>
+                            <div class="name">설정</div>
+                        </div>
+                        <div class="in_wrap">
+                            <div class="icon" id="icon_3">
+                                <img src="img/bin.png" alt="icons" />
+                            </div>
+                            <div class="name">휴지통</div>
+                        </div>
+                    </div>
+                    <div class="folder" id="main_folder">
+                        <div class="top_bar">
+                            <div class="close">
+                                <img src="img/close.png" alt="close" />
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div id="check">
+                                <img src="img/check.png" alt="check" />
+                            </div>
+                            <div id="category_txt">폴더 (3)</div>
+                        </div>
+                        <div class="upper_folder">
+                            <div class="upper_folder_icon">
+                                <img src="img/me.jpg" alt="icon" />
+                            </div>
+                            <div class="upper_folder_name">ABOUT ME</div>
+                        </div>
+                        <div class="upper_folder">
+                            <div class="upper_folder_icon">
+                                <img src="img/graphic.png" alt="icon" />
+                            </div>
+                            <div class="upper_folder_name">GRAPHIC</div>
+                        </div>
+                        <div class="upper_folder">
+                            <div class="upper_folder_icon">
+                                <img src="img/portfolio.png" alt="icon" />
+                            </div>
+                            <div class="upper_folder_name">PORTFOLIO</div>
+                        </div>
+                    </div>
+                    <div class="folder" id="me">
+                        <div class="top_bar">
+                            <div class="close">
+                                <img src="img/close.png" alt="close" />
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div id="right_arrow">
+                                <img src="img/right.png" alt="right_arrow" />
+                            </div>
+                            <div id="category_txt">ABOUT ME</div>
+                        </div>
+                        <div class="sub_folder">
+                            <div class="sub_folder_icon">
+                                <img src="img/me.jpg" alt="icon" />
+                            </div>
+                            <div class="sub_folder_txt">
+                                <div class="txt_wrap">
+                                    <div class="txt_title">
+                                        <div class="bar"></div>
+                                        <div class="title">이름</div>
+                                    </div>
+                                    <div class="cont">박혜란</div>
+                                </div>
+                                <div class="txt_wrap">
+                                    <div class="txt_title">
+                                        <div class="bar"></div>
+                                        <div class="title">생년월일</div>
+                                    </div>
+                                    <div class="cont">91.08.03</div>
+                                </div>
+                                <div class="txt_wrap">
+                                    <div class="txt_title">
+                                        <div class="bar"></div>
+                                        <div class="title">자격/수료증</div>
+                                    </div>
+                                    <div class="cont">
+                                        웹디자인기능사<br />
+                                        컴퓨터그래픽스운용기능사<br />
+                                        SBS아카데미컴퓨터아트학원 웹학과 수료
+                                    </div>
+                                </div>
+                                <div class="txt_wrap">
+                                    <div class="txt_title">
+                                        <div class="bar"></div>
+                                        <div class="title">이메일</div>
+                                    </div>
+                                    <div class="cont">phr_0803@naver.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folder" id="graphic">
+                        <div class="top_bar">
+                            <div class="close">
+                                <img src="img/close.png" alt="close" />
+                            </div>
+                        </div>
+                        <div class="scroll">
+                            <div class="category">
+                                <div id="right_arrow">
+                                    <img src="img/right.png" alt="right_arrow" />
+                                </div>
+                                <div id="category_txt">GRAPHIC</div>
+                            </div>
+                            <div class="graphic_img">
+                                <div class="graphic_txt">폴리곤 아트</div>
+                            </div>
+                            <div class="graphic_img">
+                                <div class="graphic_txt">캔들 라벨 디자인</div>
+                            </div>
+                            <div class="graphic_img">
+                                <div class="graphic_txt">동화 일러스트</div>
+                            </div>
+                            <div class="graphic_img">
+                                <div class="graphic_txt">
+                                    입체 공간 일러스트</div>
+                            </div>
+                            <div class="graphic_img">
+                                <div class="graphic_txt">스케치 효과(채색ver)</div>
+                            </div>
+                            <div class="graphic_img">
+                                <div class="graphic_txt">네온사인 느낌의 간판 디자인</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folder" id="portfolio">
+                        <div class="top_bar">
+                            <div class="close">
+                                <img src="img/close.png" alt="close" />
+                            </div>
+                        </div>
+                        <div class="scroll">
+                            <div class="category">
+                                <div id="right_arrow">
+                                    <img src="img/right.png" alt="right_arrow" />
+                                </div>
+                                <div id="category_txt">PORTFOLIO</div>
+                            </div>
+                            <div class="sub_folder">
+                                <div class="sub_folder_img">
+                                    <img src="img/l&c.jpg" alt="img" />
+                                </div>
+                                <div class="sub_folder_txt">
+                                    <div class="txt_wrap">
+                                        <div class="txt_title">
+                                            <div class="bar"></div>
+                                            <div class="title">이름</div>
+                                        </div>
+                                        <div class="cont">한화L&C</div>
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_title">
+                                            <div class="bar"></div>
+                                            <div class="title">작업기간</div>
+                                        </div>
+                                        <div class="cont">18/10/16 ~ 18/10/31</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_folder">
+                                <div class="sub_folder_img">
+                                    <img src="img/garglin.jpg" alt="img" />
+                                </div>
+                                <div class="sub_folder_txt">
+                                    <div class="txt_wrap">
+                                        <div class="txt_title">
+                                            <div class="bar"></div>
+                                            <div class="title">이름</div>
+                                        </div>
+                                        <div class="cont">가그린</div>
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <div class="txt_title">
+                                            <div class="bar"></div>
+                                            <div class="title">작업기간</div>
+                                        </div>
+                                        <div class="cont">18/11/01 ~ 18/11/12</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folder" id="setting">
+                        <div class="top_bar">
+                            <div class="close">
+                                <img src="img/close.png" alt="close" />
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div id="right_arrow">
+                                <img src="img/right.png" alt="right_arrow" />
+                            </div>
+                            <div id="category_txt">배경을 바꿔보세요!</div>
+                        </div>
+                        <div class="sub_folder">
+                            <div class="bg_img">
+                                <img src="img/basic_bg.jpg" alt="bg" />
+                            </div>
+                            <div class="bg_img">
+                                <img src="img/tree.jpg" alt="bg" />
+                            </div>
+                            <div class="bg_img">
+                                <img src="img/evening.jpg" alt="bg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="folder" id="bin">
+                        <div class="top_bar">
+                            <div class="close">
+                                <img src="img/close.png" alt="close" />
+                            </div>
+                        </div>
+                        <div class="sub_folder">
+                            <div class="bin_img">
+                                <img src="img/psd_img.png" alt="img" />
+                            </div>
+                            <div class="bin_img">
+                                <img src="img/jpg_img.png" alt="img" />
+                            </div>
+                            <div class="bin_img">
+                                <img src="img/jpg_img_2.png" alt="img" />
+                            </div>
+                            <div class="bin_img">
+                                <img src="img/ai_img.png" alt="img" />
+                            </div>
+                            <div class="bin_img">
+                                <img src="img/jpg_img_3.png" alt="img" />
+                            </div>
+                            <div class="bin_img">
+                                <img src="img/js_img.png" alt="img" />
+                            </div>
+                            <div class="bin_img">
+                                <img src="img/jpg_img_4.png" alt="img" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bottom_menu">
+                        <div class="bottom_menu_icon">
+                            <img src="img/window-02.png" alt="img" />
+                        </div>
+                        <div class="bottom_menu_icon">
+                            <img src="img/me.jpg" alt="img" />
+                        </div>
+                        <div class="bottom_menu_icon">
+                            <img src="img/graphic.png" alt="img" />
+                        </div>
+                        <div class="bottom_menu_icon">
+                            <img src="img/portfolio.png" alt="img" />
+                        </div>
+                        <div id="today">
+                            <div id="time"></div>
+                            <div id="date"></div>
+                        </div>
+                    </div>
+                    <div id="menu">
+                        <div id="menu_wrap">
+                            <div class="menu_in_wrap" id="menu_in_wrap_1">
+                                <div class="menu_icon" id="menu_icon_1">
+                                    <img src="img/computer.png" alt="icon" />
+                                </div>
+                                <div class="menu_name">내 포트폴리오</div>
+                                <div id="menu_arrow">
+                                    <img src="img/menu_arrow.png" alt="img" />
+                                </div>
+                            </div>
+                            <div class="menu_in_wrap" id="menu_in_wrap_2">
+                                <div class="menu_icon">
+                                    <img src="img/power.png" alt="icon" />
+                                </div>
+                                <div class="menu_name">처음으로 돌아가기</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sub_menu">
+                        <div class="sub_menu_wrap">
+                            <div class="sub_menu_icon">
+                                <img src="img/me.jpg" alt="icon" />
+                            </div>
+                            <div class="sub_menu_name">
+                                ABOUT ME
+                            </div>
+                        </div>
+                        <div class="sub_menu_wrap">
+                            <div class="sub_menu_icon">
+                                <img src="img/graphic.png" alt="icon" />
+                            </div>
+                            <div class="sub_menu_name">
+                                GRAPHIC
+                            </div>
+                        </div>
+                        <div class="sub_menu_wrap">
+                            <div class="sub_menu_icon">
+                                <img src="img/portfolio.png" alt="icon" />
+                            </div>
+                            <div class="sub_menu_name">
+                                PORTFOLIO
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menual">더블클릭시 실행</div>
+                </div>
+                <div class="slide_folder" id="hanwha">
+                    <div class="top_bar">
+                        <div class="back">
+                            <img src="img/back.png" alt="back" />
+                        </div>
+                        <div class="close">
+                            <img src="img/close.png" alt="close" />
+                        </div>
+                    </div>
+                    <div class="left">
+                        <img src="img/l&c_pc.jpg" alt="img" />
+                    </div>
+                    <div class="middle">
+                        <div class="sub_folder_txt">
+                            <div class="txt_wrap">
+                                <div class="txt_title">
+                                    <div class="bar"></div>
+                                    <div class="title">이름</div>
+                                </div>
+                                <div class="cont">한화 L&C</div>
+                            </div>
+                            <div class="txt_wrap">
+                                <div class="txt_title">
+                                    <div class="bar"></div>
+                                    <div class="title">작업기간</div>
+                                </div>
+                                <div class="cont">18/10/16 ~ 18/10/31</div>
+                            </div>
+                            <div class="txt_wrap">
+                                <div class="txt_title">
+                                    <div class="bar"></div>
+                                    <div class="title">타입</div>
+                                </div>
+                                <div class="cont">pc, notebook, tab, mobile</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="sub_folder_txt">
+                            <div class="txt_wrap">
+                                <div class="txt_title">
+                                    <div class="bar"></div>
+                                    <div class="title">사이트 분석 & 기획의도</div>
+                                </div>
+                                <div class="cont">
+                                    웹디자인을 하는데 있어 정보를 적재적소에 제공하는 것도 중요하지만 얼마나 오래 머물 수 있게 하느냐도 중요하다고 보는데, 해당 사이트는 정보 제공에 치중한 듯한 느낌을 받았습니다.<br /><br />
+                                    텍스트를 최소화, 이미지를 크게 배치하고, background 속성을 사용하여 방문자의 시선을 조금 더 붙잡아 둘 수 있도록 구현해보았습니다.
+                                </div>
+                            </div>
+                            <div class="title"><a href="hanwha/index.html" target="_blank">VIEW SITE →</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_folder" id="garglin">
+                    <div class="top_bar">
+                        <div class="back">
+                            <img src="img/back.png" alt="back" />
+                        </div>
+                        <div class="close">
+                            <img src="img/close.png" alt="close" />
+                        </div>
+                    </div>
+                    <div class="left">
+                        <img src="img/garglin_pc.jpg" alt="img" />
+                    </div>
+                    <div class="middle">
+                        <div class="sub_folder_txt">
+                            <div class="txt_wrap">
+                                <div class="txt_title">
+                                    <div class="bar"></div>
+                                    <div class="title">이름</div>
+                                </div>
+                                <div class="cont">가그린</div>
+                            </div>
+                            <div class="txt_wrap">
+                                <div class="txt_title">
+                                    <div class="bar"></div>
+                                    <div class="title">작업기간</div>
+                                </div>
+                                <div class="cont">18/11/01 ~ 18/11/12</div>
+                            </div>
+                            <div class="txt_wrap">
+                                <div class="txt_title">
+                                    <div class="bar"></div>
+                                    <div class="title">타입</div>
+                                </div>
+                                <div class="cont">pc, notebook, tab, mobile</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="sub_folder_txt">
+                            <div class="txt_wrap">
+                                <div class="txt_title">
+                                    <div class="bar"></div>
+                                    <div class="title">사이트 분석 & 기획의도</div>
+                                </div>
+                                <div class="cont">
+                                    해당 사이트는 중복되는 내용이 페이지 가득 단순 나열되고 있어서 어떤 컨텐츠를 주력으로 하는지, 먼저 보아야 하는지 짐작하기가 어려운 점을 보완해보고자 리뉴얼하게 되었습니다.<br /><br />
+                                    이미 널리 알려진 대중적인 브랜드이므로 소개나 설명보다는 제품 자체를 부각시키는데 집중하였습니다.
+                                </div>
+                            </div>
+                            <div class="title"><a href="garglin/index.html" target="_blank">VIEW SITE →</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  tab 이하 사이즈-->
+    <div id="bezel">
+        <div class="screen" id="home_screen">
+            <div id="home_today">
+                <div id="home_time"></div>
+                <div id="home_date"></div>
+            </div>
+        </div>
+        <div class="screen" id="main_screen">
+            <div class=app_top_bar>
+                <div class="status_icon">
+                    <img src="img/top_wifi.png" alt="icon" />
+                    <img src="img/top_airplane.png" alt="icon" />
+                </div>
+                <div class="top_bar_right">
+                    <div class="battery">
+                        <img src="img/battery_icon.png" alt="icon" />
+                    </div>
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div id="app_wrap">
+                <div id="app_top_wrap">
+                    <div class="app_in_wrap">
+                        <div class="app_icon">
+                            <img src="img/icon_me.png" alt="icon" />
+                        </div>
+                        <div class="app_name">about me</div>
+                    </div>
+                    <div class="app_in_wrap">
+                        <div class="app_icon">
+                            <img src="img/icon_contact.png" alt="icon" />
+                        </div>
+                        <div class="app_name">연락처</div>
+                    </div>
+                    <div class="app_in_wrap">
+                        <div class="app_icon">
+                            <img src="img/icon_setting.png" alt="icon" />
+                        </div>
+                        <div class="app_name">설정</div>
+                    </div>
+                    <div class="app_in_wrap">
+                        <div class="app_icon">
+                            <img src="img/icon_life.png" alt="icon" />
+                        </div>
+                        <div class="app_name">라이프스타일</div>
+                    </div>
+                </div>
+                <div id="app_bottom_wrap">
+                    <div class="app_in_wrap">
+                        <div class="app_icon">
+                            <img src="img/icon_graphic.png" alt="icon" />
+                        </div>
+                        <div class="app_name">graphic</div>
+                    </div>
+                    <div class="app_in_wrap">
+                        <div class="app_icon">
+                            <img src="img/icon_hanwha.png" alt="icon" />
+                        </div>
+                        <div class="app_name">renewal_1</div>
+                    </div>
+                    <div class="app_in_wrap">
+                        <div class="app_icon">
+                            <img src="img/icon_garglin.png" alt="icon" />
+                        </div>
+                        <div class="app_name">renewal_2</div>
+                    </div>
+                    <div class="app_in_wrap">
+                        <div class="app_icon">
+                            <img src="img/icon_file.png" alt="icon" />
+                        </div>
+                        <div class="app_name">파일관리자</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app_screen" id="app_me">
+            <div class="app_top_bar">
+                <div class="status_icon">
+                    <img src="img/top_wifi.png" alt="icon" />
+                    <img src="img/top_airplane.png" alt="icon" />
+                </div>
+                <div class="top_bar_right">
+                    <div class="battery">
+                        <img src="img/battery_icon.png" alt="icon" />
+                    </div>
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div id="me_wrap">
+                <div id="me_img">
+                    <img src="img/me.jpg" alt="img" />
+                </div>
+                <div id="me_txt_wrap">
+                    <div class="app_txt_wrap">
+                        <div class="app_txt_title_wrap">
+                            <div class="app_bar"></div>
+                            <div class="app_txt_title">이름</div>
+                        </div>
+                        <div class="app_cont">박혜란</div>
+                    </div>
+                    <div class="app_txt_wrap">
+                        <div class="app_txt_title_wrap">
+                            <div class="app_bar"></div>
+                            <div class="app_txt_title">생년월일</div>
+                        </div>
+                        <div class="app_cont">91.08.03</div>
+                    </div>
+                    <div class="app_txt_wrap">
+                        <div class="app_txt_title_wrap">
+                            <div class="app_bar"></div>
+                            <div class="app_txt_title">자격/수료증</div>
+                        </div>
+                        <div class="app_cont">
+                            웹디자인기능사<br />
+                            컴퓨터그래픽스운용기능사<br />
+                            SBS아카데미컴퓨터아트학원 웹학과 수료
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app_screen" id="app_contact">
+            <div class="app_top_bar">
+                <div class="status_icon">
+                    <img src="img/top_wifi.png" alt="icon" />
+                    <img src="img/top_airplane.png" alt="icon" />
+                </div>
+                <div class="top_bar_right">
+                    <div class="battery">
+                        <img src="img/battery_icon.png" alt="icon" />
+                    </div>
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div id="contact_wrap">
+                <div class="app_title_wrap">
+                    <div id="contact_title">연락처</div>
+                    <div id="plus">+</div>
+                </div>
+                <div id="contact_middle_wrap">
+                    <div id="middle_icon">혜란</div>
+                    <div id="middle_txt">나의 전화번호: +82 10-47**-***5</div>
+                </div>
+                <div id="contact_bottom_wrap">
+                    <div class="bottom_in_wrap">
+                        <div class="contact_index">ㅇ</div>
+                        <div class="con_wrap">
+                            <div class="contact_name">이메일</div>
+                            <div class="contact_con">phr_0803@naver.com</div>
+                        </div>
+                        <div class="con_wrap">
+                            <div class="contact_name">인스타</div>
+                            <div class="contact_con">da*******4</div>
+                        </div>
+                    </div>
+                    <div class="bottom_in_wrap">
+                        <div class="contact_index">ㅋ</div>
+                        <div class="con_wrap">
+                            <div class="contact_name">카카오톡</div>
+                            <div class="contact_con">hr*****</div>
+                        </div>
+                    </div>
+                    <div class="bottom_in_wrap">
+                        <div class="contact_index">ㅎ</div>
+                        <div class="con_wrap">
+                            <div class="contact_name">한국산업인력공단</div>
+                            <div class="contact_con">1644-****</div>
+                        </div>
+                    </div>
+                    <div class="bottom_in_wrap">
+                        <div class="contact_index">S</div>
+                        <div class="con_wrap">
+                            <div class="contact_name">SBS아카데미컴퓨터아트학원</div>
+                            <div class="contact_con">1588-****</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app_screen" id="app_setting">
+            <div class="app_top_bar">
+                <div class="status_icon">
+                    <img src="img/top_wifi.png" alt="icon" />
+                    <img src="img/top_airplane.png" alt="icon" />
+                </div>
+                <div class="top_bar_right">
+                    <div class="battery">
+                        <img src="img/battery_icon.png" alt="icon" />
+                    </div>
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div id="setting_wrap">
+                <div class="app_title">설정</div>
+                <div id="setting_left_wrap">
+                    <div class="setting_left_in_wrap">
+                        <div class="setting_icon">
+                            <img src="img/icon_airplane.png" alt="icon" />
+                        </div>
+                        <div class="setting_name">에어플레인 모드</div>
+                        <div class="but_wrap">
+                            <div class="but_bar"></div>
+                            <div class="circle_but"></div>
+                        </div>
+                    </div>
+                    <div class="setting_left_in_wrap">
+                        <div class="setting_icon">
+                            <img src="img/icon_wifi.png" alt="icon" />
+                        </div>
+                        <div class="setting_name name_wifi">Wi-Fi<br />
+                            <p style="font-weight: 300; font-size: 1.4583vw;">hr-0803에 연결되었습니다.</p>
+                        </div>
+                        <div class="but_wrap">
+                            <div class="but_bar"></div>
+                            <div class="circle_but"></div>
+                        </div>
+                    </div>
+                    <div id="setting_middle_bar"></div>
+                    <div class="setting_left_in_wrap" id="setting_background">
+                        <div class="setting_icon">
+                            <img src="img/icon_bg.png" alt="icon" />
+                        </div>
+                        <div class="setting_name">배경화면</div>
+                    </div>
+                    <div class="setting_left_in_wrap" id="setting_info">
+                        <div class="setting_icon">
+                            <img src="img/icon_info.png" alt="icon" />
+                        </div>
+                        <div class="setting_name">정보</div>
+                    </div>
+                </div>
+                <div class="setting_right_wrap">
+                    <div class="right_wrap_title">
+                        <div class="app_back">
+                            <img src="img/back.png" alt="but" />
+                        </div>
+                        <div class="title_name">배경화면</div>
+                    </div>
+                    <div id="right_wrap_sub_title">배경화면 선택 &gt;</div>
+                    <div id="setting_bg_wrap">
+                        <div class="setting_bg">
+                            <img src="img/tree.jpg" alt="img" />
+                        </div>
+                        <div class="setting_bg">
+                            <img src="img/evening.jpg" alt="img" />
+                        </div>
+                        <div class="setting_bg">
+                            <img src="img/basic_bg.jpg" alt="img" />
+                        </div>
+                    </div>
+                </div>
+                <div class="setting_right_wrap">
+                    <div class="right_wrap_title">
+                        <div class="app_back">
+                            <img src="img/back.png" alt="but" />
+                        </div>
+                        <div class="title_name">정보</div>
+                    </div>
+                    <div id="info_wrap">
+                        <div class="info_in_wrap">
+                            <div class="info_title">이름</div>
+                            <div class="info_txt">박혜란의 portpolio</div>
+                        </div>
+                        <div class="info_in_wrap">
+                            <div class="info_title">일련번호</div>
+                            <div class="info_txt">WEB91ELWKDLS</div>
+                        </div>
+                        <div class="info_in_wrap">
+                            <div class="info_title">전체 공간</div>
+                            <div class="info_txt">803GB</div>
+                        </div>
+                        <div class="info_in_wrap">
+                            <div class="info_title">그래픽</div>
+                            <div class="info_txt">2</div>
+                        </div>
+                        <div class="info_in_wrap">
+                            <div class="info_title">포트폴리오</div>
+                            <div class="info_txt">2</div>
+                        </div>
+                        <div class="info_in_wrap">
+                            <div class="info_title">버전</div>
+                            <div class="info_txt">HTML 5 / CSS 3 / JQUERY-3.3.1</div>
+                        </div>
+                        <div class="info_in_wrap">
+                            <div class="info_title">저작권</div>
+                            <div class="info_txt">ⓒ 2018. HR All rights reserved. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app_screen" id="app_life">
+            <div class="app_in_wrap">
+                <div class="app_icon">
+                    <img src="img/icon_life_2.png" alt="icon" />
+                </div>
+                <div class="app_name">라이프스타일</div>
+            </div>
+        </div>
+        <div class="app_screen" id="app_graphic">
+            <div class="app_top_bar">
+                <div class="status_icon">
+                    <img src="img/top_wifi.png" alt="icon" />
+                    <img src="img/top_airplane.png" alt="icon" />
+                </div>
+                <div class="top_bar_right">
+                    <div class="battery">
+                        <img src="img/battery_icon.png" alt="icon" />
+                    </div>
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div id="app_graphic_scroll">
+                <div class="graphic_wrap">
+                    <div class="app_graphic_txt">폴리곤 아트</div>
+                </div>
+                <div class="graphic_wrap">
+                    <div class="app_graphic_txt">캔들 라벨 디자인</div>
+                </div>
+                <div class="graphic_wrap">
+                    <div class="app_graphic_txt">동화 일러스트</div>
+                </div>
+                <div class="graphic_wrap">
+                    <div class="app_graphic_txt">
+                        입체 공간 일러스트</div>
+                </div>
+                <div class="graphic_wrap">
+                    <div class="app_graphic_txt">스케치 효과(채색ver)</div>
+                </div>
+                <div class="graphic_wrap">
+                    <div class="app_graphic_txt">네온사인 느낌의 간판 디자인</div>
+                </div>
+            </div>
+        </div>
+        <div class="app_screen" id="app_hanwha">
+            <div class="app_top_bar">
+                <div class="status_icon">
+                    <img src="img/top_wifi.png" alt="icon" />
+                    <img src="img/top_airplane.png" alt="icon" />
+                </div>
+                <div class="top_bar_right">
+                    <div class="battery">
+                        <img src="img/battery_icon.png" alt="icon" />
+                    </div>
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div class="portfolio_wrap">
+                <div class="renwal_img">
+                    <img src="img/l&c.jpg" alt="img" />
+                </div>
+                <div class="renwal_txt_wrap">
+                    <div class="renwal_txt_left_wrap">
+                        <div class="app_txt_wrap">
+                            <div class="app_txt_title_wrap">
+                                <div class="app_bar"></div>
+                                <div class="app_txt_title">이름</div>
+                            </div>
+                            <div class="app_cont">한화 L&C</div>
+                        </div>
+                        <div class="app_txt_wrap">
+                            <div id="app_txt_left">
+
+                            </div>
+                            <div class="app_txt_title_wrap">
+                                <div class="app_bar"></div>
+                                <div class="app_txt_title">작업기간</div>
+                            </div>
+                            <div class="app_cont">18/10/16 ~ 18/10/31</div>
+                        </div>
+                        <div class="app_txt_wrap">
+                            <div class="app_txt_title_wrap">
+                                <div class="app_bar"></div>
+                                <div class="app_txt_title">타입</div>
+                            </div>
+                            <div class="app_cont">pc, notebook, tab, mobile</div>
+                        </div>
+                    </div>
+                    <div class="renwal_txt_right_wrap">
+                        <div class="app_txt_wrap" id="hanwha_app_txt_wrap">
+                            <div class="app_txt_title_wrap">
+                                <div class="app_bar"></div>
+                                <div class="app_txt_title">사이트 분석 & 기획의도</div>
+                            </div>
+                            <div class="app_cont">
+                                웹디자인을 하는데 있어 정보를 적재적소에 제공하는 것도 중요하지만 얼마나 오래 머물 수 있게 하느냐도 중요하다고 보는데, 해당 사이트는 정보 제공에 치중한 듯한 느낌을 받았습니다.<br /><br />
+                                텍스트를 최소화, 이미지를 크게 배치하고, background 속성을 사용하여 방문자의 시선을 조금 더 붙잡아 둘 수 있도록 구현해보았습니다.
+                            </div>
+                        </div>
+                        <a href="hanwha/index.html" target="_blank">
+                            <div id="view">VIEW SITE →</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app_screen" id="app_garglin">
+            <div class="app_top_bar">
+                <div class="status_icon">
+                    <img src="img/top_wifi.png" alt="icon" />
+                    <img src="img/top_airplane.png" alt="icon" />
+                </div>
+                <div class="top_bar_right">
+                    <div class="battery">
+                        <img src="img/battery_icon.png" alt="icon" />
+                    </div>
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div class="portfolio_wrap">
+                <div class="renwal_img">
+                    <img src="img/garglin.jpg" alt="img" />
+                </div>
+                <div class="renwal_txt_wrap">
+                    <div class="renwal_txt_left_wrap">
+                        <div class="app_txt_wrap">
+                            <div class="app_txt_title_wrap">
+                                <div class="app_bar"></div>
+                                <div class="app_txt_title">이름</div>
+                            </div>
+                            <div class="app_cont">가그린</div>
+                        </div>
+                        <div class="app_txt_wrap">
+                            <div id="app_txt_left">
+
+                            </div>
+                            <div class="app_txt_title_wrap">
+                                <div class="app_bar"></div>
+                                <div class="app_txt_title">작업기간</div>
+                            </div>
+                            <div class="app_cont">18/11/01 ~ 18/11/12</div>
+                        </div>
+                        <div class="app_txt_wrap">
+                            <div class="app_txt_title_wrap">
+                                <div class="app_bar"></div>
+                                <div class="app_txt_title">타입</div>
+                            </div>
+                            <div class="app_cont">pc, notebook, tab, mobile</div>
+                        </div>
+                    </div>
+                    <div class="renwal_txt_right_wrap">
+                        <div class="app_txt_wrap" id="garglin_app_txt_wrap">
+                            <div class="app_txt_title_wrap">
+                                <div class="app_bar"></div>
+                                <div class="app_txt_title">사이트 분석 & 기획의도</div>
+                            </div>
+                            <div class="app_cont">
+                                해당 사이트는 중복되는 내용이 페이지 가득 단순 나열되고 있어서 어떤 컨텐츠를 주력으로 하는지, 먼저 보아야 하는지 짐작하기가 어려운 점을 보완해보고자 리뉴얼하게 되었습니다.<br /><br />
+                                이미 널리 알려진 대중적인 브랜드이므로 소개나 설명보다는 제품 자체를 부각시키는데 집중하였습니다.
+                            </div>
+                        </div>
+                        <a href="garglin/index.html" target="_blank">
+                            <div id="view">VIEW SITE →</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app_screen" id="app_file">
+            <div class="app_top_bar">
+                <div class="status_icon">
+                    <img src="img/top_wifi.png" alt="icon" />
+                    <img src="img/top_airplane.png" alt="icon" />
+                </div>
+                <div class="top_bar_right">
+                    <div class="battery">
+                        <img src="img/battery_icon.png" alt="icon" />
+                    </div>
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div id="file_wrap">
+                <div id="file_top_wrap">
+                    <div id="file_top_left">
+                        <div id="menu_but">
+                            <img src="img/menu.png" alt="menu" />
+                        </div>
+                        <div id="file_app_name">파일관리자</div>
+                    </div>
+                    <div id="file_top_right">
+                        <div id="search_but">
+                            <img src="img/search.png" alt="search" />
+                        </div>
+                        <div id="more_but">
+                            <img src="img/more.png" alt="more" />
+                        </div>
+                    </div>
+                </div>
+                <div id="file_bottom_wrap">
+                    <div id="file_con">
+                        <img src="img/file_con.png" alt="con" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="home_but">
+            <img src="img/home_but.png" alt="but" />
+        </div>
+    </div>
+
+</body>
+
+</html>
