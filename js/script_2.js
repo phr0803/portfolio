@@ -146,7 +146,7 @@ $(document).ready(function () {
 
     $('.setting_bg').eq(0).click(function () {
         $('#main_screen').css({
-            backgroundImage: 'url(../img/tab_bg_2.png)'
+            backgroundImage: 'url(img/tab_bg_2.png)'
         });
         
         $('.setting_bg').css({
@@ -159,7 +159,7 @@ $(document).ready(function () {
     });
     $('.setting_bg').eq(1).click(function () {
         $('#main_screen').css({
-            backgroundImage: 'url(../img/tab_bg_3.png)'
+            backgroundImage: 'url(img/tab_bg_3.png)'
         });
         
         $('.setting_bg').css({
@@ -172,7 +172,7 @@ $(document).ready(function () {
     });
     $('.setting_bg').eq(2).click(function () {
         $('#main_screen').css({
-            backgroundImage: 'url(../img/main_screen.png)'
+            backgroundImage: 'url(img/main_screen.png)'
         });
         
         $('.setting_bg').css({

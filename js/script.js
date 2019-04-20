@@ -192,17 +192,17 @@ $(document).ready(function () {
     /*------------------------------------배경 바꾸기-----------------------------------*/
     $('.bg_img').eq(0).click(function () {
         $('#bg_white').css({
-            backgroundImage: 'URL(../img/bg.png)'
+            backgroundImage: 'URL(img/bg.png)'
         });
     });
     $('.bg_img').eq(1).click(function () {
         $('#bg_white').css({
-            backgroundImage: 'url(../img/bg_1.png)'
+            backgroundImage: 'url(img/bg_1.png)'
         });
     });
     $('.bg_img').eq(2).click(function () {
         $('#bg_white').css({
-            backgroundImage: 'url(../img/bg_2.png)'
+            backgroundImage: 'url(img/bg_2.png)'
         });
     });
 
