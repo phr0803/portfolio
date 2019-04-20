@@ -1,0 +1,409 @@
+    /*-------------------공통사항-------------------*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        img {
+            border: 0;
+            display: block;
+        }
+
+        html,
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333;
+            height: 100%;
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+        #bezel {
+            width: 100%;
+            height: 100%;
+            background-image: url(img/tab_border.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            border-radius: 30px;
+        }
+
+        .screen,
+        .app_screen {
+            width: 89.7916vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 6%;
+            left: 50%;
+            border-radius: 10px;
+        }
+
+        #home_screen {
+            background-image: url(img/home_screen.jpg);
+        }
+
+        #home_today {
+            width: auto;
+            height: auto;
+            text-align: center;
+        }
+
+        #main_screen {
+            background-color: #eaecf0;
+            display: none;
+        }
+
+        .app_top_bar {
+            width: 100%;
+            background-color: #eaecf0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        #main_screen>.app_top_bar {
+            background-color: transparent;
+        }
+
+        .status_icon {
+            float: left;
+            position: relative;
+        }
+
+        .status_icon>img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        .battery>img,
+        .app_icon>img,
+        #home_but>img,
+        #me_img>img,
+        .setting_icon>img,
+        .app_back>img,
+        .setting_bg>img,
+        .renwal_img>img,
+        #file_top_wrap img,
+        #file_con>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .time {
+            width: auto;
+            float: right;
+            text-align: center;
+            color: #fff;
+        }
+
+        #app_wrap {
+            width: auto;
+            overflow: hidden;
+        }
+
+        #app_top_wrap,
+        #app_bottom_wrap {
+            width: auto;
+            overflow: hidden;
+        }
+
+        .app_in_wrap {
+            height: auto;
+            float: left;
+            cursor: pointer;
+        }
+
+        .app_in_wrap:last-child {
+            margin-right: 0;
+        }
+
+        .app_screen {
+            display: none;
+            background-color: #dfe1e4;
+        }
+
+        .app_name {
+            text-align: center;
+            color: #fff;
+        }
+
+        #home_but {
+            position: absolute;
+            left: 50%;
+            cursor: pointer;
+        }
+
+        #me_txt_wrap {
+            width: auto;
+            height: auto;
+            display: inline-block;
+        }
+
+        #contact_wrap,
+        #contact_bottom_wrap,
+        .bottom_in_wrap,
+        .con_wrap,
+        #info_wrap,
+        .info_in_wrap,
+        .renwal_txt_wrap,
+        #file_wrap,
+        #file_bottom_wrap {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #middle_icon {
+            text-align: center;
+            color: #fff;
+            background-color: #3f4754;
+            border-radius: 40px;
+            float: left;
+        }
+
+        .contact_index {
+            width: 100%;
+            background-color: #3f4754;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        .bottom_in_wrap:first-child>.con_wrap:nth-child(2) {
+            margin-bottom: 0;
+        }
+
+        #setting_wrap {
+            width: 100%;
+            height: 79.1666vw;
+            position: relative;
+        }
+
+        .app_title,
+        .right_wrap_title {
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #3f4754;
+            box-sizing: border-box;
+        }
+
+        #setting_left_wrap {
+            border-right: 1px solid #3f4754;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .setting_left_in_wrap:nth-child(4),
+        .setting_left_in_wrap:nth-child(5) {
+            cursor: pointer;
+        }
+
+        .setting_name {
+            display: inline-block;
+            float: left;
+        }
+
+        .but_bar,
+        .circle_but {
+            border-radius: 12px;
+            background-color: #fff;
+            border: 1px solid #3f4754;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .circle_but {
+            border-radius: 14px;
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        #setting_middle_bar {
+            width: 100%;
+            background-color: #eaecf0;
+        }
+
+        .setting_right_wrap {
+            float: left;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: none;
+        }
+
+        .app_back {
+            float: left;
+            cursor: pointer;
+        }
+
+        #right_wrap_sub_title {
+            overflow: hidden;
+            font-weight: 300;
+            margin: 0 auto;
+        }
+
+        #setting_bg_wrap {
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+        .setting_bg {
+            float: left;
+            cursor: pointer;
+        }
+
+        .info_title {
+            width: 94px;
+            height: auto;
+            float: left;
+        }
+
+        .info_txt {
+            font-weight: 300;
+            float: left;
+        }
+
+        #app_life {
+            background-color: transparent;
+        }
+
+        #app_life>.app_in_wrap {
+            width: 52.0833vw;
+            float: left;
+            margin-right: 8.8vw;
+            margin-bottom: 10.5263vw;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -30.2631vw;
+            margin-left: -26.3157vw;
+        }
+
+        #app_life .app_icon {
+            width: 52.0833vw;
+            height: 52.0833vw;
+        }
+
+        #app_life .app_name {
+            font-size: 5.3684vw;
+            text-align: center;
+            color: #fff;
+            text-shadow: -1px 1px 3px #000;
+        }
+
+        #app_graphic_scroll {
+            width: auto;
+            overflow-x: hidden;
+        }
+
+        .graphic_wrap {
+            width: 90%;
+            height: 60%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 10% 5%;
+        }
+
+        .graphic_wrap:nth-child(1) {
+            background-image: url(img/polygone_art.jpg);
+        }
+
+        .graphic_wrap:nth-child(2) {
+            background-image: url(img/label.jpg);
+            height: 40%;
+        }
+
+        .graphic_wrap:nth-child(3) {
+            background-image: url(img/illu.jpg);
+        }
+
+        .graphic_wrap:nth-child(4) {
+            background-image: url(img/room.jpg);
+        }
+
+        .graphic_wrap:nth-child(5) {
+            background-image: url(img/sketch.jpg);
+        }
+
+        .graphic_wrap:nth-child(6) {
+            background-image: url(img/neonsign.jpg);
+        }
+
+        .app_graphic_txt {
+            width: 100%;
+            height: 100%;
+            display: none;
+            color: white;
+            padding: 2%;
+            box-sizing: border-box;
+        }
+
+        .renwal_txt_left_wrap,
+        .renwal_txt_right_wrap {
+            width: 40%;
+            overflow: hidden;
+            float: left;
+        }
+
+        .renwal_txt_right_wrap {
+            width: 60%;
+            margin-top: 2.7vw;
+        }
+
+        .app_txt_wrap {
+            width: auto;
+            height: auto;
+        }
+
+        .app_txt_title_wrap,
+        #view {
+            width: auto;
+            height: auto;
+            display: inline-block;
+        }
+
+        .app_bar {
+            background-color: #333;
+            float: left;
+        }
+
+        .app_txt_title {
+            float: left;
+        }
+
+        #view {
+            float: right;
+        }
+
+        #file_top_wrap {
+            width: 100%;
+            background-color: #e2c221;
+        }
+
+        #file_top_left,
+        #file_top_right {
+            width: auto;
+            height: auto;
+            float: left;
+        }
+
+        #file_top_left>div,
+        #file_top_right>div {
+            float: left;
+        }

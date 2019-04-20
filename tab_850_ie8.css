@@ -1,0 +1,354 @@
+ @media all and (max-width:899px) and (min-width:850px) {
+            #monitor {
+                display: none;
+            }
+
+            .screen,
+            .app_screen {
+                height: 90vw;
+            }
+
+            #home_today {
+                margin: 5.2083vw;
+                font-size: 40px;
+            }
+
+            .app_top_bar {
+                height: 4.1666vw;
+            }
+
+            .status_icon {
+                width: 3.125vw;
+                height: 2.1875vw;
+                margin: 0.8333vw 2.0833vw;
+            }
+
+            .top_bar_right {
+                float: right;
+                width: 100px;
+                height: 4.1666vw;
+                margin-right: 40px;
+            }
+
+            .battery {
+                width: 41px;
+                height: 22px;
+                float: left;
+                margin-top: 0.9375vw;
+            }
+
+            .time {
+                height: 4.1666vw;
+                line-height: 4.1666vw;
+                text-shadow: -1px 1px 5px #000;
+            }
+
+            #app_wrap {
+                margin: 4.1666vw 8.3333vw;
+            }
+
+            .app_in_wrap {
+                width: 10.4166vw;
+                margin-right: 10.2708vw;
+                margin-bottom: 8.3333vw;
+            }
+
+            .app_icon {
+                width: 8.3333vw;
+                height: 8.3333vw;
+                margin: 0 auto;
+            }
+
+            .app_name {
+                font-size: 1.875vw;
+                text-shadow: -1px 1px 5px #000;
+            }
+
+            #home_but {
+                width: 5.2083vw;
+                height: 5.2083vw;
+                bottom: 3%;
+            }
+
+            #me_wrap {
+                width: 41.6666vw;
+                height: 75.7916vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -35.2916vw;
+                margin-left: -20.8333vw;
+            }
+
+            #me_img {
+                width: 41.6666vw;
+                height: 41.6666vw;
+            }
+
+            #me_txt_wrap {
+                margin-top: 3.125vw;
+            }
+
+
+            .app_title_wrap {
+                width: 100%;
+                height: 8.3333vw;
+            }
+
+            #contact_title {
+                font-size: 3.125vw;
+                float: left;
+                margin: 1.8333vw 0 0 40.625vw;
+            }
+
+            #plus {
+                font-size: 4.1666vw;
+                float: right;
+                margin: 0.8333vw 4.1666vw 0 0;
+            }
+
+            #contact_middle_wrap {
+                width: 100%;
+                height: 10.4166vw;
+            }
+
+            #middle_icon {
+                width: 8.3333vw;
+                height: 8.3333vw;
+                font-size: 3.125vw;
+                line-height: 8.3333vw;
+                margin: 1.0416vw 2.0833vw 1.0416vw 7.2916vw;
+            }
+
+            #middle_txt {
+                font-size: 1.875vw;
+                line-height: 10.1041vw;
+            }
+
+            .contact_index {
+                height: 3.125vw;
+                font-size: 1.875vw;
+                padding-left: 2.0833vw;
+            }
+
+            .con_wrap {
+                padding: 1.0416vw 0 0 2.0833vw;
+                box-sizing: border-box;
+                margin-bottom: 4.1666vw;
+            }
+
+            .contact_name,
+            .contact_con {
+                font-size: 1.875vw;
+                float: left;
+            }
+
+            .contact_con {
+                font-weight: 300;
+                margin-left: 2.0833vw;
+            }
+
+
+            .app_title {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .app_title,
+            .right_wrap_title {
+                height: 8.3333vw;
+                font-size: 3.125vw;
+                line-height: 8.3333vw;
+            }
+
+            #setting_left_wrap {
+                width: 36.4583vw;
+                height: 82.5vw;
+                position: absolute;
+                left: 0;
+                top: 8.3vw;
+            }
+
+            .setting_left_in_wrap {
+                width: auto;
+                height: 5.2083vw;
+                margin: 3.125vw;
+            }
+
+            .setting_icon {
+                width: 5.2083vw;
+                height: 5.2083vw;
+                float: left;
+            }
+
+            .setting_name {
+                font-size: 1.875vw;
+                line-height: 5.2083vw;
+                margin-left: 2.0833vw;
+            }
+
+            .name_wifi {
+                height: 5.2083vw;
+                overflow: hidden;
+            }
+
+            .but_wrap {
+                width: 5.7291vw;
+                height: 2.9166vw;
+                float: right;
+                position: relative;
+                margin-top: 1.1458vw;
+            }
+
+            .but_bar,
+            .circle_but {
+                width: 5.5208vw;
+                height: 2.7083vw;
+            }
+
+            .circle_but {
+                width: 2.8125vw;
+                height: 2.8125vw;
+            }
+
+            #setting_middle_bar {
+                height: 4.1666vw;
+                margin-bottom: 3.125vw;
+            }
+
+            .setting_right_wrap {
+                width: 53.125vw;
+                height: 70.8333vw;
+            }
+
+            .app_back {
+                width: 3.3333vw;
+                height: 3.3333vw;
+                margin: 2.5vw;
+            }
+
+            .title_name {
+                float: left;
+                margin: 0 12.5vw;
+            }
+
+            .setting_right_wrap:nth-child(4) .title_name {
+                margin: 0 16.6666vw;
+            }
+
+            #right_wrap_sub_title {
+                width: 47.9166vw;
+                font-size: 1.875vw;
+                margin-top: 3.125vw;
+            }
+
+            #setting_bg_wrap {
+                width: 47.9166vw;
+                height: 34.375vw;
+                margin: 1.0416vw auto;
+                padding: 2.0833vw 0 0 2.0833vw;
+            }
+
+            .setting_bg {
+                width: 20.8333vw;
+                height: 13.8541vw;
+                margin: 0 2.0833vw 2.0833vw 0;
+            }
+
+            #info_wrap {
+                padding: 3.125vw;
+                box-sizing: border-box;
+            }
+
+            .info_in_wrap {
+                margin-bottom: 1.0416vw;
+                font-size: 1.875vw;
+            }
+
+            .info_txt {
+                margin-left: 4.1666vw;
+            }
+
+            #app_graphic_scroll {
+                height: 85.8vw;
+            }
+
+            .app_graphic_txt {
+                font-size: 3.3333vw;
+            }
+
+            .portfolio_wrap {
+                width: 62.5vw;
+                overflow: hidden;
+                margin: 1.0416vw auto;
+            }
+
+            .renwal_img {
+                width: 62.5vw;
+                height: 31.7708vw;
+            }
+
+            .renwal_txt_left_wrap,
+            .renwal_txt_right_wrap {
+                margin-top: 3.125vw;
+            }
+
+            .app_txt_wrap {
+                margin-bottom: 2.0833vw;
+            }
+
+            .app_bar {
+                width: 0.4166vw;
+                height: 2.0833vw;
+                margin: 3.5px 1.0416vw 0 0;
+            }
+
+            .app_cont {
+                margin-left: 1.5625vw;
+                font-weight: 300;
+            }
+
+            #file_top_wrap {
+                height: 8.3333vw;
+            }
+
+            #file_top_left,
+            #file_top_right {
+                margin-left: 4.1666vw;
+                margin-top: 1.8229vw;
+            }
+
+            #menu_but {
+                width: 3.3333vw;
+                height: 2.1875vw;
+                margin: 1.25vw 0;
+            }
+
+            #file_app_name {
+                font-size: 3.125vw;
+                margin-left: 3.125vw;
+            }
+
+            #file_top_right {
+                float: right;
+                margin-top: 2.5vw;
+            }
+
+            #search_but {
+                width: 3.3333vw;
+                height: 3.3333vw;
+            }
+
+            #more_but {
+                width: 0.8333vw;
+                height: 3.3333vw;
+                margin: 0 4.1666vw;
+            }
+
+            #file_con {
+                width: 82.8125vw;
+                height: 61.1458vw;
+                margin: 4.1666vw auto;
+            }
+        }
