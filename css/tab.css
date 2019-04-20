@@ -3,74 +3,24 @@
         display: none;
     }
 
-    #bezel {
-        width: 100%;
-        height: 100%;
-        background-image: url(../img/tab_border.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        border-radius: 30px;
-    }
-
     .screen,
     .app_screen {
-        width: 89.7916vw;
         height: 105vw;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 6%;
-        left: 50%;
-        border-radius: 10px;
-    }
-
-    #home_screen {
-        background-image: url(../img/home_screen.jpg);
     }
 
     #home_today {
-        width: auto;
-        height: auto;
         margin: 5.2083vw;
-        text-align: center;
         font-size: 40px;
     }
 
-    #main_screen {
-        background-color: #eaecf0;
-        display: none;
-    }
-
     .app_top_bar {
-        width: 100%;
         height: 4.1666vw;
-        background-color: #eaecf0;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-
-    #main_screen > .app_top_bar {
-        background-color: transparent;
     }
 
     .status_icon {
         width: 3.125vw;
         height: 2.1875vw;
-        float: left;
-        position: relative;
         margin: 0.8333vw 2.0833vw;
-    }
-
-    .status_icon > img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: none;
     }
 
     .top_bar_right {
@@ -87,44 +37,20 @@
         margin-top: 0.9375vw;
     }
 
-    .battery > img {
-        width: 100%;
-        height: 100%;
-    }
-
     .time {
-        width: auto;
         height: 4.1666vw;
-        float: right;
-        text-align: center;
         line-height: 4.1666vw;
-        color: #fff;
         text-shadow: -1px 1px 5px #000;
     }
 
     #app_wrap {
-        width: auto;
-        overflow: hidden;
         margin: 4.1666vw 8.3333vw;
-    }
-
-    #app_top_wrap,
-    #app_bottom_wrap {
-        width: auto;
-        overflow: hidden;
     }
 
     .app_in_wrap {
         width: 10.4166vw;
-        height: auto;
-        float: left;
         margin-right: 10.2708vw;
         margin-bottom: 8.3333vw;
-        cursor: pointer;
-    }
-
-    .app_in_wrap:last-child {
-        margin-right: 0;
     }
 
     .app_icon {
@@ -133,35 +59,15 @@
         margin: 0 auto;
     }
 
-    .app_icon > img {
-        width: 100%;
-        height: 100%;
-    }
-
     .app_name {
         font-size: 1.875vw;
-        text-align: center;
-        color: #fff;
         text-shadow: -1px 1px 5px #000;
-    }
-
-    .app_screen {
-        display: none;
-        background-color: #dfe1e4;
     }
 
     #home_but {
         width: 5.2083vw;
         height: 5.2083vw;
-        position: absolute;
         bottom: 4%;
-        left: 50%;
-        cursor: pointer;
-    }
-
-    #home_but > img {
-        width: 100%;
-        height: 100%;
     }
 
     #me_wrap {
@@ -179,29 +85,8 @@
         height: 41.6666vw;
     }
 
-    #me_img > img {
-        width: 100%;
-        height: 100%;
-    }
-
     #me_txt_wrap {
-        width: auto;
-        height: auto;
-        display: inline-block;
         margin-top: 3.125vw;
-    }
-
-    #contact_wrap,
-    #contact_bottom_wrap,
-    .bottom_in_wrap,
-    .con_wrap,
-    #info_wrap,
-    .info_in_wrap,
-    .renwal_txt_wrap,
-    #file_wrap,
-    #file_bottom_wrap {
-        width: 100%;
-        overflow: hidden;
     }
 
     .app_title_wrap {
@@ -230,12 +115,7 @@
         width: 8.3333vw;
         height: 8.3333vw;
         font-size: 3.125vw;
-        text-align: center;
         line-height: 8.3333vw;
-        color: #fff;
-        background-color: #3f4754;
-        border-radius: 40px;
-        float: left;
         margin: 1.0416vw 2.0833vw 1.0416vw 7.2916vw;
     }
 
@@ -245,23 +125,15 @@
     }
 
     .contact_index {
-        width: 100%;
         height: 3.125vw;
-        background-color: #3f4754;
         font-size: 1.875vw;
-        color: #fff;
         padding-left: 2.0833vw;
-        box-sizing: border-box;
     }
 
     .con_wrap {
         padding: 1.0416vw 0 0 2.0833vw;
         box-sizing: border-box;
         margin-bottom: 4.1666vw;
-    }
-
-    .bottom_in_wrap:first-child > .con_wrap:nth-child(2) {
-        margin-bottom: 0;
     }
 
     .contact_name,
@@ -275,12 +147,6 @@
         margin-left: 2.0833vw;
     }
 
-    #setting_wrap {
-        width: 100%;
-        height: 79.1666vw;
-        position: relative;
-    }
-
     .app_title {
         position: absolute;
         top: 0;
@@ -289,21 +155,14 @@
 
     .app_title,
     .right_wrap_title {
-        width: 100%;
         height: 8.3333vw;
         font-size: 3.125vw;
-        text-align: center;
         line-height: 8.3333vw;
-        border-bottom: 1px solid #3f4754;
-        box-sizing: border-box;
     }
 
     #setting_left_wrap {
         width: 36.4583vw;
         height: 98vw;
-        border-right: 1px solid #3f4754;
-        box-sizing: border-box;
-        float: left;
         position: absolute;
         left: 0;
         top: 8.3vw;
@@ -315,28 +174,16 @@
         margin: 3.125vw;
     }
 
-    .setting_left_in_wrap:nth-child(4),
-    .setting_left_in_wrap:nth-child(5) {
-        cursor: pointer;
-    }
-
     .setting_icon {
         width: 5.2083vw;
         height: 5.2083vw;
         float: left;
     }
 
-    .setting_icon > img {
-        width: 100%;
-        height: 100%;
-    }
-
     .setting_name {
         font-size: 1.875vw;
         line-height: 5.2083vw;
         margin-left: 2.0833vw;
-        display: inline-block;
-        float: left;
     }
 
     .name_wifi {
@@ -356,49 +203,27 @@
     .circle_but {
         width: 5.5208vw;
         height: 2.7083vw;
-        border-radius: 12px;
-        background-color: #fff;
-        border: 1px solid #3f4754;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
 
     .circle_but {
         width: 2.8125vw;
         height: 2.8125vw;
-        border-radius: 14px;
-        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
     }
 
     #setting_middle_bar {
-        width: 100%;
         height: 4.1666vw;
-        background-color: #eaecf0;
         margin-bottom: 3.125vw;
     }
 
     .setting_right_wrap {
         width: 53.125vw;
         height: 70.8333vw;
-        float: left;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        display: none;
     }
 
     .app_back {
         width: 3.3333vw;
         height: 3.3333vw;
-        float: left;
         margin: 2.5vw;
-        cursor: pointer;
-    }
-
-    .app_back > img {
-        width: 100%;
-        height: 100%;
     }
 
     .title_name {
@@ -412,10 +237,7 @@
 
     #right_wrap_sub_title {
         width: 47.9166vw;
-        overflow: hidden;
         font-size: 1.875vw;
-        font-weight: 300;
-        margin: 0 auto;
         margin-top: 3.125vw;
     }
 
@@ -424,21 +246,12 @@
         height: 34.375vw;
         margin: 1.0416vw auto;
         padding: 2.0833vw 0 0 2.0833vw;
-        box-sizing: border-box;
-        background-color: #fff;
     }
 
     .setting_bg {
         width: 20.8333vw;
         height: 13.8541vw;
-        float: left;
         margin: 0 2.0833vw 2.0833vw 0;
-        cursor: pointer;
-    }
-
-    .setting_bg > img {
-        width: 100%;
-        height: 100%;
     }
 
     #info_wrap {
@@ -451,97 +264,17 @@
         font-size: 1.875vw;
     }
 
-    .info_title {
-        width: 83px;
-        height: auto;
-        float: left;
-    }
-
     .info_txt {
-        font-weight: 300;
         margin-left: 4.1666vw;
-        float: left;
     }
 
-    #app_life {
-        background-color: transparent;
-    }
-
-    #app_life > .app_in_wrap {
-        width: 52.0833vw;
-        float: left;
-        margin-right: 8.8vw;
-        margin-bottom: 10.5263vw;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -30.2631vw;
-        margin-left: -26.3157vw;
-    }
-
-    #app_life .app_icon {
-        width: 52.0833vw;
-        height: 52.0833vw;
-    }
-
-    #app_life .app_name {
-        font-size: 5.3684vw;
-        text-align: center;
-        color: #fff;
-        text-shadow: -1px 1px 3px #000;
-    }
-    
     #app_graphic_scroll {
-        width: auto;
         height: 100.8vw;
-        overflow-x: hidden;
-    }
-
-    .graphic_wrap {
-        width: 90%;
-        height: 60%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin: 10% 5%;
-    }
-
-    .graphic_wrap:nth-child(1) {
-        background-image: url(../img/polygone_art.jpg);
-    }
-
-    .graphic_wrap:nth-child(2) {
-        background-image: url(../img/label.jpg);
-        height: 45%;
-    }
-
-    .graphic_wrap:nth-child(3) {
-        background-image: url(../img/illu.jpg);
-    }
-
-    .graphic_wrap:nth-child(4) {
-        background-image: url(../img/room.jpg);
-    }
-
-    .graphic_wrap:nth-child(5) {
-        background-image: url(../img/sketch.jpg);
-    }
-
-    .graphic_wrap:nth-child(6) {
-        background-image: url(../img/neonsign.jpg);
     }
 
     .app_graphic_txt {
-        width: 100%;
-        height: 100%;
-        display: none;
         font-size: 3.8961vw;
-        color: white;
-        padding: 2%;
-        box-sizing: border-box;
     }
-
 
     .portfolio_wrap {
         width: 62.5vw;
@@ -554,47 +287,19 @@
         height: 31.7708vw;
     }
 
-    .renwal_img > img {
-        width: 100%;
-        height: 100%;
-    }
-
     .renwal_txt_left_wrap,
     .renwal_txt_right_wrap {
-        width: 40%;
-        overflow: hidden;
-        float: left;
         margin-top: 3.125vw;
     }
 
-    .renwal_txt_right_wrap {
-        width: 60%;
-        margin-top: 2.7vw;
-    }
-
     .app_txt_wrap {
-        width: auto;
-        height: auto;
         margin-bottom: 2.0833vw;
-    }
-
-    .app_txt_title_wrap,
-    #view {
-        width: auto;
-        height: auto;
-        display: inline-block;
     }
 
     .app_bar {
         width: 0.4166vw;
         height: 2.0833vw;
-        background-color: #333;
-        float: left;
         margin: 3.5px 1.0416vw 0 0;
-    }
-
-    .app_txt_title {
-        float: left;
     }
 
     .app_cont {
@@ -602,21 +307,12 @@
         font-weight: 300;
     }
 
-    #view {
-        float: right;
-    }
-
     #file_top_wrap {
-        width: 100%;
         height: 8.3333vw;
-        background-color: #e2c221;
     }
 
     #file_top_left,
     #file_top_right {
-        width: auto;
-        height: auto;
-        float: left;
         margin-left: 4.1666vw;
         margin-top: 1.8229vw;
     }
@@ -648,29 +344,11 @@
         margin: 0 4.1666vw;
     }
 
-    #file_top_left > div,
-    #file_top_right > div {
-        float: left;
-    }
-
-    #file_top_wrap img {
-        width: 100%;
-        height: 100%;
-    }
-
     #file_con {
         width: 82.8125vw;
         height: 61.1458vw;
         margin: 4.1666vw auto;
     }
-
-    #file_con > img {
-        width: 100%;
-        height: 100%;
-    }
-
-
-
 }
 
 /*end*/
