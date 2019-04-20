@@ -31,7 +31,7 @@
         #bezel {
             width: 100%;
             height: 100%;
-            background-image: url(img/tab_border.png);
+            background-image: url(../img/tab_border.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -52,7 +52,7 @@
         }
 
         #home_screen {
-            background-image: url(img/home_screen.jpg);
+            background-image: url(../img/home_screen.jpg);
         }
 
         #home_today {
@@ -321,28 +321,28 @@
         }
 
         .graphic_wrap:nth-child(1) {
-            background-image: url(img/polygone_art.jpg);
+            background-image: url(../img/polygone_art.jpg);
         }
 
         .graphic_wrap:nth-child(2) {
-            background-image: url(img/label.jpg);
+            background-image: url(../img/label.jpg);
             height: 40%;
         }
 
         .graphic_wrap:nth-child(3) {
-            background-image: url(img/illu.jpg);
+            background-image: url(../img/illu.jpg);
         }
 
         .graphic_wrap:nth-child(4) {
-            background-image: url(img/room.jpg);
+            background-image: url(../img/room.jpg);
         }
 
         .graphic_wrap:nth-child(5) {
-            background-image: url(img/sketch.jpg);
+            background-image: url(../img/sketch.jpg);
         }
 
         .graphic_wrap:nth-child(6) {
-            background-image: url(img/neonsign.jpg);
+            background-image: url(../img/neonsign.jpg);
         }
 
         .app_graphic_txt {

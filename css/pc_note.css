@@ -6,7 +6,7 @@
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/monitor.jpg', sizingMethod='scale');
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/monitor.jpg', sizingMethod='scale');
         position: relative;
     }
 
@@ -26,7 +26,7 @@
 
     #main {
         background-image: url(../img/login_bg.png);
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/login_bg.png', sizingMethod='scale');
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/login_bg.png', sizingMethod='scale');
         background-position: top;
         display: none;
     }
@@ -71,7 +71,7 @@
 
     #bg_white {
         background-image: url(../img/bg.png);
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.png', sizingMethod='scale');
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/bg.png', sizingMethod='scale');
         left: 0;
         top: 0;
         float: left;
