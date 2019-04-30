@@ -24,7 +24,6 @@ $(document).ready(function () {
     });
 
     /*--------------------------시간-------------------------*/
-    
     var today_2 = new Date();
     var dd_2 = today_2.getDate();
     var mm_2 = today_2.getMonth() + 1;
@@ -47,16 +46,13 @@ $(document).ready(function () {
     
     $('#home_time,.time').text(time_2);
     $('#home_date').text(today_2);
-    
-    
 
-    /*------------------------클릭이벤트 시작----------------------*/
+    /*------------------------홈에서 메인화면으로 이동----------------------*/
     $('#home_screen').click(function(){
         $('#main_screen').fadeIn();
     });
-    /*-------------------홈에서 메인화면으로 이동-------------------*/
     
-    
+    /*---------------------비행기, 와이파이 모드 설정-----------------------*/
     $('.but_wrap').click(function () {
         $('.circle_but').css({
             left: 0
@@ -72,7 +68,6 @@ $(document).ready(function () {
             backgroundColor: '#3f4754'
         });
     });
-
     $('.but_wrap').eq(0).click(function () {
         $('.status_icon>img').css({
             display: 'none'
@@ -99,9 +94,8 @@ $(document).ready(function () {
             lineHeight: '3.2894vw'
         });
     });
-    /*----------------비행기모드, 와이파이 끝-----------------*/
-
-
+    
+    /*----------------클릭시 활성화, 페이지 연결-----------------*/
     $('#setting_background').click(function () {
         $('.setting_right_wrap').css({
             display: 'none'
@@ -141,9 +135,8 @@ $(document).ready(function () {
             backgroundColor: 'transparent'
         });
     });
-    /*----------------배경 활성화, 페이지 연결 끝----------------*/
-
-
+    
+    /*----------------배경화면 변경----------------*/
     $('.setting_bg').eq(0).click(function () {
         $('#main_screen').css({
             backgroundImage: 'url(img/tab_bg_2.png)'
@@ -183,9 +176,8 @@ $(document).ready(function () {
             boxSizing:'border-box'
         });
     });
-    /*---------------------배경 바꾸기 끝---------------------*/
-
-
+    
+    /*---------------------콘텐츠 열고 닫기---------------------*/
     $('.app_in_wrap').each(function (index) {
         $(this).attr('data-index', index);
     }).click(function () {
@@ -212,6 +204,7 @@ $(document).ready(function () {
         }
     });
 
+    /*---------------------홈버튼 클릭시---------------------*/
     $('#home_but').click(function () {
         $('.app_screen,.setting_right_wrap').fadeOut();
         $('.setting_left_in_wrap').css({
@@ -220,13 +213,9 @@ $(document).ready(function () {
         $('#main_screen').css({
             filter: 'blur(0)'
         }).fadeIn();
-    });
-
-    /*---------------------어플 열고 닫기---------------------*/
+    });    
     
-    
-     /*------------------------------------graphic-----------------------------------*/
-    
+     /*----------------graphic 콘텐츠 내 설정----------------*/
     $('.graphic_wrap').hover(function(){
         $('.app_graphic_txt',this).css({
             display:'block',
