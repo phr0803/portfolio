@@ -1,16 +1,16 @@
 $(document).ready(function () {
 
     var bg_w = $('.bg').width();
-    var bg_h = $('.bg,#mask').height();
-    var border_w = $('#border').width();
+    var bg_h = $('#loading,.bg,#mask').height();
+    var loading_w = $('#loading_in_box').width();
     var slide_w = $('#mask').width();
 
     function layout() {
-        $('#border').css({
-            marginLeft: -(border_w / 2)
+        $('#loading_in_box').css({
+            marginLeft: -(loading_w / 2)
         });
 
-        $('.bg,#mask').css({
+        $('#loading,.bg,#mask').css({
             marginLeft: -(bg_w / 2),
             marginTop: -(bg_h / 2)
         });
@@ -45,8 +45,8 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         bg_w = $('.bg').width();
-        bg_h = $('.bg,#mask').height();
-        border_w = $('#border').width();
+        bg_h = $('#loading,.bg,#mask').height();
+        loading_w = $('#loading_in_box').width();
         slide_w = $('#mask').width();
 
         layout();
@@ -56,19 +56,19 @@ $(document).ready(function () {
     /*-------------------------------------부팅시작과 끝-------------------------------------*/
     $('#copy').fadeIn(2000);
 
-    $('#loading').animate({
+    $('#loading_bar').animate({
         width: '40%',
     });
-    $('#loading').animate({
+    $('#loading_bar').animate({
         width: '50%'
     });
-    $('#loading').animate({
+    $('#loading_bar').animate({
         width: '80%'
     }, 4000);
-    $('#loading').animate({
+    $('#loading_bar').animate({
         width: '100%'
     }, function () {
-        $('#border').fadeOut(500, function () {
+        $('#loading').fadeOut(500, function () {
             $('#main').fadeIn(3000);
         });
     });

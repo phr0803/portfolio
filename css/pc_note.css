@@ -10,6 +10,7 @@
         position: relative;
     }
 
+    #loading,
     .bg,
     #mask,
     #bg_white {
@@ -31,18 +32,21 @@
         display: none;
     }
 
-    #border {
+    #loading_in_box {
         width: 95%;
-        height: 20px;
-        border: 2px solid #fff;
-        border-radius: 20px;
+        overflow: hidden;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-top: -10px;
     }
 
-    #loading {
+    #border {
+        height: 20px;
+        border: 2px solid #fff;
+        border-radius: 20px;
+    }
+
+    #loading_bar {
         width: 10%;
         height: 20px;
         border-radius: 5px;

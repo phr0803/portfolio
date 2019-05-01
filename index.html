@@ -32,30 +32,34 @@
 
 <body>
     <div id="monitor">
-        <div id="border">
-            <div id="loading"></div>
-            <div id="copy">ⓒ 2018. HR All rights reserved.</div>
+        <div id="loading" title="로딩중입니다. 잠시만 기다려주세요.">
+            <div id="loading_in_box">
+                <div id="border">
+                    <div id="loading_bar"></div>
+                </div>
+                <div id="copy">ⓒ 2018. HR All rights reserved.</div>
+            </div>
         </div>
-        <div class="bg" id="main"></div>
+        <div class="bg" id="main" title="저의 포트폴리오에 오신 것을 환영합니다. 화면을 클릭해주세요."></div>
         <div id="mask">
             <div id="slide_wrap">
                 <div id="bg_white">
                     <div id="wrap">
-                        <div class="in_wrap">
+                        <div class="in_wrap" title="더블클릭시 실행">
                             <div class="icon" id="icon_1">
-                                <img src="img/computer.png" alt="portfolio_icon" />
+                                <img src="img/computer.png" alt="내 포트폴리오 아이콘" />
                             </div>
                             <div class="name">내 포트폴리오</div>
                         </div>
-                        <div class="in_wrap">
+                        <div class="in_wrap" title="더블클릭시 실행">
                             <div class="icon" id="icon_2">
-                                <img src="img/setting.png" alt="setting_icon" />
+                                <img src="img/setting.png" alt="설정 아이콘" />
                             </div>
                             <div class="name">설정</div>
                         </div>
-                        <div class="in_wrap">
+                        <div class="in_wrap" title="더블클릭시 실행">
                             <div class="icon" id="icon_3">
-                                <img src="img/bin.png" alt="bin_icon" />
+                                <img src="img/bin.png" alt="휴지통 아이콘" />
                             </div>
                             <div class="name">휴지통</div>
                         </div>
@@ -63,30 +67,30 @@
                     <div class="folder" id="main_folder">
                         <div class="top_bar">
                             <div class="close">
-                                <img src="img/close.png" alt="close_button" />
+                                <img src="img/close.png" alt="창닫기" />
                             </div>
                         </div>
                         <div class="category">
                             <div id="check">
-                                <img src="img/check.png" alt="check_icon" />
+                                <img src="img/check.png" alt="아래 화살표" />
                             </div>
                             <div id="category_txt">폴더 (3)</div>
                         </div>
-                        <div class="upper_folder">
+                        <div class="upper_folder" title="더블클릭시 실행">
                             <div class="upper_folder_icon">
-                                <img src="img/me_small.jpg" alt="me_folder_icon" />
+                                <img src="img/me_small.jpg" alt="자기소개 아이콘" />
                             </div>
                             <div class="upper_folder_name">ABOUT ME</div>
                         </div>
-                        <div class="upper_folder">
+                        <div class="upper_folder" title="더블클릭시 실행">
                             <div class="upper_folder_icon">
-                                <img src="img/graphic.png" alt="graphic_folder_icon" />
+                                <img src="img/graphic.png" alt="그래픽 아이콘" />
                             </div>
                             <div class="upper_folder_name">GRAPHIC</div>
                         </div>
-                        <div class="upper_folder">
+                        <div class="upper_folder" title="더블클릭시 실행">
                             <div class="upper_folder_icon">
-                                <img src="img/portfolio_small.png" alt="portfolio_folder_icon" />
+                                <img src="img/portfolio_small.png" alt="포트폴리오 아이콘" />
                             </div>
                             <div class="upper_folder_name">PORTFOLIO</div>
                         </div>
@@ -94,18 +98,18 @@
                     <div class="folder" id="me">
                         <div class="top_bar">
                             <div class="close">
-                                <img src="img/close.png" alt="close_button" />
+                                <img src="img/close.png" alt="창닫기" />
                             </div>
                         </div>
                         <div class="category">
                             <div id="right_arrow">
-                                <img src="img/right.png" alt="right_arrow_icon" />
+                                <img src="img/right.png" alt="오른쪽 화살표" />
                             </div>
                             <div id="category_txt">ABOUT ME</div>
                         </div>
                         <div class="sub_folder">
                             <div class="sub_folder_icon">
-                                <img src="img/me.jpg" alt="me_folder_icon" />
+                                <img src="img/me.jpg" alt="얼굴 일러스트" />
                             </div>
                             <div class="sub_folder_txt">
                                 <div class="txt_wrap">
@@ -146,13 +150,13 @@
                     <div class="folder" id="graphic">
                         <div class="top_bar">
                             <div class="close">
-                                <img src="img/close.png" alt="close_button" />
+                                <img src="img/close.png" alt="창닫기" />
                             </div>
                         </div>
                         <div class="scroll">
                             <div class="category">
                                 <div id="right_arrow">
-                                    <img src="img/right.png" alt="right_arrow_icon" />
+                                    <img src="img/right.png" alt="오른쪽 화살표" />
                                 </div>
                                 <div id="category_txt">GRAPHIC</div>
                             </div>
@@ -180,19 +184,19 @@
                     <div class="folder" id="portfolio">
                         <div class="top_bar">
                             <div class="close">
-                                <img src="img/close.png" alt="close_button" />
+                                <img src="img/close.png" alt="창닫기" />
                             </div>
                         </div>
                         <div class="scroll">
                             <div class="category">
                                 <div id="right_arrow">
-                                    <img src="img/right.png" alt="right_arrow_icon" />
+                                    <img src="img/right.png" alt="오른쪽 화살표" />
                                 </div>
                                 <div id="category_txt">PORTFOLIO</div>
                             </div>
                             <div class="sub_folder">
                                 <div class="sub_folder_img">
-                                    <img src="img/l&c.jpg" alt="renewal_img" />
+                                    <img src="img/l&c.jpg" alt="리뉴얼 사이트 이미지" />
                                 </div>
                                 <div class="sub_folder_txt">
                                     <div class="txt_wrap">
@@ -213,7 +217,7 @@
                             </div>
                             <div class="sub_folder">
                                 <div class="sub_folder_img">
-                                    <img src="img/garglin.jpg" alt="renewal_img" />
+                                    <img src="img/garglin.jpg" alt="리뉴얼 사이트 이미지" />
                                 </div>
                                 <div class="sub_folder_txt">
                                     <div class="txt_wrap">
@@ -237,69 +241,69 @@
                     <div class="folder" id="setting">
                         <div class="top_bar">
                             <div class="close">
-                                <img src="img/close.png" alt="close_button" />
+                                <img src="img/close.png" alt="창닫기" />
                             </div>
                         </div>
                         <div class="category">
                             <div id="right_arrow">
-                                <img src="img/right.png" alt="right_arrow_icon" />
+                                <img src="img/right.png" alt="오른쪽 화살표" />
                             </div>
                             <div id="category_txt">배경을 바꿔보세요!</div>
                         </div>
                         <div class="sub_folder">
                             <div class="bg_img">
-                                <img src="img/basic_bg.jpg" alt="bg_img" />
+                                <img src="img/basic_bg.jpg" alt="회색 바탕의 기본 이미지" />
                             </div>
                             <div class="bg_img">
-                                <img src="img/tree.jpg" alt="bg_img" />
+                                <img src="img/tree.jpg" alt="밤하늘 아래 호수가 있고 나무 한 그루가 물에 비치고 있는 이미지" />
                             </div>
                             <div class="bg_img">
-                                <img src="img/evening.jpg" alt="bg_img" />
+                                <img src="img/evening.jpg" alt="노을지는 저녁의 산 이미지" />
                             </div>
                         </div>
                     </div>
                     <div class="folder" id="bin">
                         <div class="top_bar">
                             <div class="close">
-                                <img src="img/close.png" alt="close_button" />
+                                <img src="img/close.png" alt="창닫기" />
                             </div>
                         </div>
                         <div class="sub_folder">
                             <div class="bin_img">
-                                <img src="img/psd_img.png" alt="file_img" />
+                                <img src="img/psd_img.png" alt="포토샵 파일" />
                             </div>
                             <div class="bin_img">
-                                <img src="img/jpg_img.png" alt="file_img" />
+                                <img src="img/jpg_img.png" alt="이미지 파일" />
                             </div>
                             <div class="bin_img">
-                                <img src="img/jpg_img_2.png" alt="file_img" />
+                                <img src="img/jpg_img_2.png" alt="이미지 파일" />
                             </div>
                             <div class="bin_img">
-                                <img src="img/ai_img.png" alt="file_img" />
+                                <img src="img/ai_img.png" alt="일러스트 파일" />
                             </div>
                             <div class="bin_img">
-                                <img src="img/jpg_img_3.png" alt="file_img" />
+                                <img src="img/jpg_img_3.png" alt="이미지 파일" />
                             </div>
                             <div class="bin_img">
-                                <img src="img/js_img.png" alt="file_img" />
+                                <img src="img/js_img.png" alt="스크립트 파일" />
                             </div>
                             <div class="bin_img">
-                                <img src="img/jpg_img_4.png" alt="file_img" />
+                                <img src="img/jpg_img_4.png" alt="이미지 파일" />
                             </div>
                         </div>
                     </div>
                     <div id="bottom_menu">
                         <div class="bottom_menu_icon">
-                            <img src="img/window-02.png" alt="window_button" />
+                            <img src="img/window-02.png" alt="윈도우 버튼" />
                         </div>
                         <div class="bottom_menu_icon">
-                            <img src="img/me_small.jpg" alt="me_shortcut_icon" />
+                            <img src="img/me_small.jpg" alt="자기소개 바로가기 아이콘" />
                         </div>
                         <div class="bottom_menu_icon">
-                            <img src="img/graphic.png" alt="graphic_shortcut_icon" />
+                            <img src="img/graphic.png" alt="그래픽 바로가기 아이콘" />
                         </div>
                         <div class="bottom_menu_icon">
-                            <img src="img/portfolio_small.png" alt="portfolio_shortcut_icon" />
+                            <img src="img/portfolio_small.png" alt="포트폴리오 바로가기 아이콘" />
                         </div>
                         <div id="today">
                             <div id="time"></div>
@@ -310,16 +314,16 @@
                         <div id="menu_wrap">
                             <div class="menu_in_wrap" id="menu_in_wrap_1">
                                 <div class="menu_icon" id="menu_icon_1">
-                                    <img src="img/computer.png" alt="portfolio_icon" />
+                                    <img src="img/computer.png" alt="내 포트폴리오 아이콘" />
                                 </div>
                                 <div class="menu_name">내 포트폴리오</div>
                                 <div id="menu_arrow">
-                                    <img src="img/menu_arrow.png" alt="right_arrow_button" />
+                                    <img src="img/menu_arrow.png" alt="오른쪽 화살표" />
                                 </div>
                             </div>
                             <div class="menu_in_wrap" id="menu_in_wrap_2">
                                 <div class="menu_icon">
-                                    <img src="img/power_small.png" alt="power_icon" />
+                                    <img src="img/power_small.png" alt="전원 버튼" />
                                 </div>
                                 <div class="menu_name">처음으로 돌아가기</div>
                             </div>
@@ -328,7 +332,7 @@
                     <div id="sub_menu">
                         <div class="sub_menu_wrap">
                             <div class="sub_menu_icon">
-                                <img src="img/me_small.jpg" alt="me_icon" />
+                                <img src="img/me_small.jpg" alt="자기소개 아이콘" />
                             </div>
                             <div class="sub_menu_name">
                                 ABOUT ME
@@ -336,7 +340,7 @@
                         </div>
                         <div class="sub_menu_wrap">
                             <div class="sub_menu_icon">
-                                <img src="img/graphic.png" alt="graphic_icon" />
+                                <img src="img/graphic.png" alt="그래픽 아이콘" />
                             </div>
                             <div class="sub_menu_name">
                                 GRAPHIC
@@ -344,26 +348,26 @@
                         </div>
                         <div class="sub_menu_wrap">
                             <div class="sub_menu_icon">
-                                <img src="img/portfolio_small.png" alt="portfolio_icon" />
+                                <img src="img/portfolio_small.png" alt="포트폴리오 아이콘" />
                             </div>
                             <div class="sub_menu_name">
                                 PORTFOLIO
                             </div>
                         </div>
                     </div>
-                    <div class="menual">더블클릭시 실행</div>
+<!--                    <div class="menual">더블클릭시 실행</div>-->
                 </div>
                 <div class="slide_folder" id="hanwha">
                     <div class="top_bar">
                         <div class="back">
-                            <img src="img/back.png" alt="back_button" />
+                            <img src="img/back.png" alt="뒤로 가기" />
                         </div>
                         <div class="close">
-                            <img src="img/close.png" alt="close_button" />
+                            <img src="img/close.png" alt="창닫기" />
                         </div>
                     </div>
                     <div class="left">
-                        <img src="img/l&c_pc.jpg" alt="renewal_img" />
+                        <img src="img/l&c_pc.jpg" alt="리뉴얼 사이트 이미지" />
                     </div>
                     <div class="middle">
                         <div class="sub_folder_txt">
@@ -409,14 +413,14 @@
                 <div class="slide_folder" id="garglin">
                     <div class="top_bar">
                         <div class="back">
-                            <img src="img/back.png" alt="back_button" />
+                            <img src="img/back.png" alt="뒤로 가기" />
                         </div>
                         <div class="close">
-                            <img src="img/close.png" alt="close_button" />
+                            <img src="img/close.png" alt="창닫기" />
                         </div>
                     </div>
                     <div class="left">
-                        <img src="img/garglin_pc.jpg" alt="renewal_img" />
+                        <img src="img/garglin_pc.jpg" alt="리뉴얼 사이트 이미지" />
                     </div>
                     <div class="middle">
                         <div class="sub_folder_txt">
@@ -466,7 +470,7 @@
 
     <!--  tab 이하 사이즈-->
     <div id="bezel">
-        <div class="screen" id="home_screen">
+        <div class="screen" id="home_screen" title="화면을 터치해주세요.">
             <div id="home_today">
                 <div id="home_time"></div>
                 <div id="home_date"></div>
@@ -475,12 +479,12 @@
         <div class="screen" id="main_screen">
             <div class=app_top_bar>
                 <div class="status_icon">
-                    <img src="img/top_wifi.png" alt="wifi_icon" />
-                    <img src="img/top_airplane.png" alt="airplane_icon" />
+                    <img src="img/top_wifi.png" alt="와이파이 아이콘" />
+                    <img src="img/top_airplane.png" alt="비행기모드 아이콘" />
                 </div>
                 <div class="top_bar_right">
                     <div class="battery">
-                        <img src="img/battery_icon.png" alt="battery_icon" />
+                        <img src="img/battery_icon.png" alt="배터리 아이콘" />
                     </div>
                     <div class="time"></div>
                 </div>
@@ -489,25 +493,25 @@
                 <div id="app_top_wrap">
                     <div class="app_in_wrap">
                         <div class="app_icon">
-                            <img src="img/icon_me.png" alt="me_icon" />
+                            <img src="img/icon_me.png" alt="자기소개 앱 아이콘" />
                         </div>
                         <div class="app_name">about me</div>
                     </div>
                     <div class="app_in_wrap">
                         <div class="app_icon">
-                            <img src="img/icon_contact.png" alt="contact_icon" />
+                            <img src="img/icon_contact.png" alt="연락처 앱 아이콘" />
                         </div>
                         <div class="app_name">연락처</div>
                     </div>
                     <div class="app_in_wrap">
                         <div class="app_icon">
-                            <img src="img/icon_setting.png" alt="setting_icon" />
+                            <img src="img/icon_setting.png" alt="설정 앱 아이콘" />
                         </div>
                         <div class="app_name">설정</div>
                     </div>
                     <div class="app_in_wrap">
                         <div class="app_icon">
-                            <img src="img/icon_life.png" alt="lifestyle_icon" />
+                            <img src="img/icon_life.png" alt="라이프스타일 앱 아이콘" />
                         </div>
                         <div class="app_name">라이프스타일</div>
                     </div>
@@ -515,25 +519,25 @@
                 <div id="app_bottom_wrap">
                     <div class="app_in_wrap">
                         <div class="app_icon">
-                            <img src="img/icon_graphic.png" alt="graphic_icon" />
+                            <img src="img/icon_graphic.png" alt="그래픽 앱 아이콘" />
                         </div>
                         <div class="app_name">graphic</div>
                     </div>
                     <div class="app_in_wrap">
                         <div class="app_icon">
-                            <img src="img/icon_hanwha.png" alt="renwal_site_icon" />
+                            <img src="img/icon_hanwha.png" alt="리뉴얼 사이트 앱 아이콘" />
                         </div>
                         <div class="app_name">renewal_1</div>
                     </div>
                     <div class="app_in_wrap">
                         <div class="app_icon">
-                            <img src="img/icon_garglin.png" alt="renwal_site_icon" />
+                            <img src="img/icon_garglin.png" alt="리뉴얼 사이트 앱 아이콘" />
                         </div>
                         <div class="app_name">renewal_2</div>
                     </div>
                     <div class="app_in_wrap">
                         <div class="app_icon">
-                            <img src="img/icon_file.png" alt="file_management_icon" />
+                            <img src="img/icon_file.png" alt="파일관리자 앱 아이콘" />
                         </div>
                         <div class="app_name">파일관리자</div>
                     </div>
@@ -543,19 +547,19 @@
         <div class="app_screen" id="app_me">
             <div class="app_top_bar">
                 <div class="status_icon">
-                    <img src="img/top_wifi.png" alt="wifi_icon" />
-                    <img src="img/top_airplane.png" alt="airplane_icon" />
+                    <img src="img/top_wifi.png" alt="와이파이 아이콘" />
+                    <img src="img/top_airplane.png" alt="비행기모드 아이콘" />
                 </div>
                 <div class="top_bar_right">
                     <div class="battery">
-                        <img src="img/battery_icon.png" alt="battery_icon" />
+                        <img src="img/battery_icon.png" alt="배터리 아이콘" />
                     </div>
                     <div class="time"></div>
                 </div>
             </div>
             <div id="me_wrap">
                 <div id="me_img">
-                    <img src="img/me.jpg" alt="me_img" />
+                    <img src="img/me.jpg" alt="얼굴 일러스트" />
                 </div>
                 <div id="me_txt_wrap">
                     <div class="app_txt_wrap">
@@ -589,12 +593,12 @@
         <div class="app_screen" id="app_contact">
             <div class="app_top_bar">
                 <div class="status_icon">
-                    <img src="img/top_wifi.png" alt="wifi_icon" />
-                    <img src="img/top_airplane.png" alt="airplane_icon" />
+                    <img src="img/top_wifi.png" alt="와이파이 아이콘" />
+                    <img src="img/top_airplane.png" alt="비행기모드 아이콘" />
                 </div>
                 <div class="top_bar_right">
                     <div class="battery">
-                        <img src="img/battery_icon.png" alt="battery_icon" />
+                        <img src="img/battery_icon.png" alt="배터리 아이콘" />
                     </div>
                     <div class="time"></div>
                 </div>
@@ -647,12 +651,12 @@
         <div class="app_screen" id="app_setting">
             <div class="app_top_bar">
                 <div class="status_icon">
-                    <img src="img/top_wifi.png" alt="wifi_icon" />
-                    <img src="img/top_airplane.png" alt="airplane_icon" />
+                    <img src="img/top_wifi.png" alt="와이파이 아이콘" />
+                    <img src="img/top_airplane.png" alt="비행기모드 아이콘" />
                 </div>
                 <div class="top_bar_right">
                     <div class="battery">
-                        <img src="img/battery_icon.png" alt="battery_icon" />
+                        <img src="img/battery_icon.png" alt="배터리 아이콘" />
                     </div>
                     <div class="time"></div>
                 </div>
@@ -662,36 +666,36 @@
                 <div id="setting_left_wrap">
                     <div class="setting_left_in_wrap">
                         <div class="setting_icon">
-                            <img src="img/icon_airplane.png" alt="airplane_icon" />
+                            <img src="img/icon_airplane.png" alt="비행기모드 아이콘" />
                         </div>
                         <div class="setting_name">에어플레인 모드</div>
                         <div class="but_wrap">
                             <div class="but_bar"></div>
-                            <div class="circle_but"></div>
+                            <div class="circle_but" title="클릭시 기능이 활성화됩니다."></div>
                         </div>
                     </div>
                     <div class="setting_left_in_wrap">
                         <div class="setting_icon">
-                            <img src="img/icon_wifi.png" alt="wifi_icon" />
+                            <img src="img/icon_wifi.png" alt="와이파이 아이콘" />
                         </div>
                         <div class="setting_name name_wifi">Wi-Fi<br />
                             <p style="font-weight: 300; font-size: 1.4583vw;">hr-0803에 연결되었습니다.</p>
                         </div>
                         <div class="but_wrap">
                             <div class="but_bar"></div>
-                            <div class="circle_but"></div>
+                            <div class="circle_but" title="클릭시 기능이 활성화됩니다."></div>
                         </div>
                     </div>
                     <div id="setting_middle_bar"></div>
                     <div class="setting_left_in_wrap" id="setting_background">
                         <div class="setting_icon">
-                            <img src="img/icon_bg.png" alt="bg_setting_icon" />
+                            <img src="img/icon_bg.png" alt="배경화면 설정 아이콘" />
                         </div>
                         <div class="setting_name">배경화면</div>
                     </div>
                     <div class="setting_left_in_wrap" id="setting_info">
                         <div class="setting_icon">
-                            <img src="img/icon_info.png" alt="info_icon" />
+                            <img src="img/icon_info.png" alt="정보 아이콘" />
                         </div>
                         <div class="setting_name">정보</div>
                     </div>
@@ -699,27 +703,27 @@
                 <div class="setting_right_wrap">
                     <div class="right_wrap_title">
                         <div class="app_back">
-                            <img src="img/back.png" alt="back_button" />
+                            <img src="img/back.png" alt="뒤로 가기" />
                         </div>
                         <div class="title_name">배경화면</div>
                     </div>
                     <div id="right_wrap_sub_title">배경화면 선택 &gt;</div>
                     <div id="setting_bg_wrap">
                         <div class="setting_bg">
-                            <img src="img/tree.jpg" alt="bg_img" />
+                            <img src="img/tree.jpg" alt="밤하늘 아래 호수가 있고 나무 한 그루가 물에 비치고 있는 이미지" />
                         </div>
                         <div class="setting_bg">
-                            <img src="img/evening.jpg" alt="bg_img" />
+                            <img src="img/evening.jpg" alt="노을지는 저녁의 산 이미지" />
                         </div>
                         <div class="setting_bg">
-                            <img src="img/basic_bg.jpg" alt="bg_img" />
+                            <img src="img/basic_bg.jpg" alt="회색 바탕의 기본 이미지" />
                         </div>
                     </div>
                 </div>
                 <div class="setting_right_wrap">
                     <div class="right_wrap_title">
                         <div class="app_back">
-                            <img src="img/back.png" alt="back_button" />
+                            <img src="img/back.png" alt="뒤로 가기" />
                         </div>
                         <div class="title_name">정보</div>
                     </div>
@@ -759,7 +763,7 @@
         <div class="app_screen" id="app_life">
             <div class="app_in_wrap">
                 <div class="app_icon">
-                    <img src="img/icon_life_2.png" alt="lifestyle_file_icon" />
+                    <img src="img/icon_life_2.png" alt="시계와 날씨 앱 이미지" />
                 </div>
                 <div class="app_name">라이프스타일</div>
             </div>
@@ -767,12 +771,12 @@
         <div class="app_screen" id="app_graphic">
             <div class="app_top_bar">
                 <div class="status_icon">
-                    <img src="img/top_wifi.png" alt="wifi_icon" />
-                    <img src="img/top_airplane.png" alt="airplane_icon" />
+                    <img src="img/top_wifi.png" alt="와이파이 아이콘" />
+                    <img src="img/top_airplane.png" alt="비행기모드 아이콘" />
                 </div>
                 <div class="top_bar_right">
                     <div class="battery">
-                        <img src="img/battery_icon.png" alt="battery_icon" />
+                        <img src="img/battery_icon.png" alt="배터리 아이콘" />
                     </div>
                     <div class="time"></div>
                 </div>
@@ -802,19 +806,19 @@
         <div class="app_screen" id="app_hanwha">
             <div class="app_top_bar">
                 <div class="status_icon">
-                    <img src="img/top_wifi.png" alt="wifi_icon" />
-                    <img src="img/top_airplane.png" alt="airplane_icon" />
+                    <img src="img/top_wifi.png" alt="와이파이 아이콘" />
+                    <img src="img/top_airplane.png" alt="비행기모드 아이콘" />
                 </div>
                 <div class="top_bar_right">
                     <div class="battery">
-                        <img src="img/battery_icon.png" alt="battery_icon" />
+                        <img src="img/battery_icon.png" alt="배터리 아이콘" />
                     </div>
                     <div class="time"></div>
                 </div>
             </div>
             <div class="portfolio_wrap">
                 <div class="renwal_img">
-                    <img src="img/l&c.jpg" alt="renewal_img" />
+                    <img src="img/l&c.jpg" alt="리뉴얼 사이트 이미지" />
                 </div>
                 <div class="renwal_txt_wrap">
                     <div class="renwal_txt_left_wrap">
@@ -864,19 +868,19 @@
         <div class="app_screen" id="app_garglin">
             <div class="app_top_bar">
                 <div class="status_icon">
-                    <img src="img/top_wifi.png" alt="wifi_icon" />
-                    <img src="img/top_airplane.png" alt="airplane_icon" />
+                    <img src="img/top_wifi.png" alt="와이파이 아이콘" />
+                    <img src="img/top_airplane.png" alt="비행기모드 아이콘" />
                 </div>
                 <div class="top_bar_right">
                     <div class="battery">
-                        <img src="img/battery_icon.png" alt="battery_icon" />
+                        <img src="img/battery_icon.png" alt="배터리 아이콘" />
                     </div>
                     <div class="time"></div>
                 </div>
             </div>
             <div class="portfolio_wrap">
                 <div class="renwal_img">
-                    <img src="img/garglin.jpg" alt="renwal_img" />
+                    <img src="img/garglin.jpg" alt="리뉴얼 사이트 이미지" />
                 </div>
                 <div class="renwal_txt_wrap">
                     <div class="renwal_txt_left_wrap">
@@ -926,12 +930,12 @@
         <div class="app_screen" id="app_file">
             <div class="app_top_bar">
                 <div class="status_icon">
-                    <img src="img/top_wifi.png" alt="wifi_icon" />
-                    <img src="img/top_airplane.png" alt="airplane_icon" />
+                    <img src="img/top_wifi.png" alt="와이파이 아이콘" />
+                    <img src="img/top_airplane.png" alt="비행기모드 아이콘" />
                 </div>
                 <div class="top_bar_right">
                     <div class="battery">
-                        <img src="img/battery_icon.png" alt="battery_icon" />
+                        <img src="img/battery_icon.png" alt="배터리 아이콘" />
                     </div>
                     <div class="time"></div>
                 </div>
@@ -940,28 +944,28 @@
                 <div id="file_top_wrap">
                     <div id="file_top_left">
                         <div id="menu_but">
-                            <img src="img/menu.png" alt="menu_button" />
+                            <img src="img/menu.png" alt="메뉴 버튼 이미지" />
                         </div>
                         <div id="file_app_name">파일관리자</div>
                     </div>
                     <div id="file_top_right">
                         <div id="search_but">
-                            <img src="img/search.png" alt="search_button_img" />
+                            <img src="img/search.png" alt="찾기 버튼 이미지" />
                         </div>
                         <div id="more_but">
-                            <img src="img/more.png" alt="more_button_img" />
+                            <img src="img/more.png" alt="설정 더 보기 버튼 이미지" />
                         </div>
                     </div>
                 </div>
                 <div id="file_bottom_wrap">
                     <div id="file_con">
-                        <img src="img/file_con.png" alt="file_icons_img" />
+                        <img src="img/file_con.png" alt="파일이 아래로 쭉 나열된 이미지" />
                     </div>
                 </div>
             </div>
         </div>
         <div id="home_but">
-            <img src="img/home_but.png" alt="but" />
+            <img src="img/home_but.png" alt="홈버튼" />
         </div>
     </div>
 
