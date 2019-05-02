@@ -148,20 +148,20 @@ $(document).ready(function () {
     });
 
     /*---------------------------더블클릭시 실행 안내 문구---------------------------*/
-    $('.in_wrap,.upper_folder').mousemove(function (e) {
-        var x = e.pageX;
-        var y = e.pageY;
-
-        $('.menual').css({
-            display: 'block',
-            top: y,
-            left: x
-        });
-    }).mouseout(function () {
-        $('.menual').css({
-            display: 'none'
-        });
-    });
+//    $('.in_wrap,.upper_folder').mousemove(function (e) {
+//        var x = e.pageX;
+//        var y = e.pageY;
+//
+//        $('.menual').css({
+//            display: 'block',
+//            top: y,
+//            left: x
+//        });
+//    }).mouseout(function () {
+//        $('.menual').css({
+//            display: 'none'
+//        });
+//    });
 
     /*--------------------------------더블클릭 이벤트-------------------------------*/
     $('.in_wrap').eq(0).dblclick(function () {
