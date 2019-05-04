@@ -6,7 +6,7 @@
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/monitor.jpg', sizingMethod='scale');
+/*        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/monitor.jpg', sizingMethod='scale');*/
         position: relative;
     }
 
@@ -27,7 +27,7 @@
 
     #main {
         background-image: url(../img/login_bg.png);
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/login_bg.png', sizingMethod='scale');
+/*        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/login_bg.png', sizingMethod='scale');*/
         background-position: top;
         display: none;
     }
@@ -75,7 +75,7 @@
 
     #bg_white {
         background-image: url(../img/bg.png);
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/bg.png', sizingMethod='scale');
+/*        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/bg.png', sizingMethod='scale');*/
         left: 0;
         top: 0;
         float: left;
@@ -176,7 +176,7 @@
         height: 100%;
     }
 
-    #category_txt,
+    .category_txt,
     .upper_folder_name {
         float: left;
         font-size: 0.9375vw;
@@ -216,14 +216,14 @@
         left: 40%;
     }
 
-    #right_arrow {
+    .right_arrow {
         width: 0.7812vw;
         height: 1.5625vw;
         float: left;
         margin-right: 10px;
     }
 
-    #right_arrow > img {
+    .right_arrow > img {
         width: 100%;
         height: 100%;
     }
@@ -304,32 +304,32 @@
 
     .graphic_img:nth-child(2) {
         background-image: url(../img/polygone_art.jpg);
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/polygone_art.jpg', sizingMethod='scale');
+/*        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/polygone_art.jpg', sizingMethod='scale');*/
     }
 
     .graphic_img:nth-child(3) {
         background-image: url(../img/label.jpg);
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/label.jpg', sizingMethod='scale');
+/*        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/label.jpg', sizingMethod='scale');*/
     }
 
     .graphic_img:nth-child(4) {
         background-image: url(../img/illu.jpg);
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/illu.jpg', sizingMethod='scale');
+/*        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/illu.jpg', sizingMethod='scale');*/
     }
 
     .graphic_img:nth-child(5) {
         background-image: url(../img/room.jpg);
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/room.jpg', sizingMethod='scale');
+/*        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/room.jpg', sizingMethod='scale');*/
     }
 
     .graphic_img:nth-child(6) {
         background-image: url(../img/sketch.jpg);
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/sketch.jpg', sizingMethod='scale');
+/*        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/sketch.jpg', sizingMethod='scale');*/
     }
 
     .graphic_img:nth-child(7) {
         background-image: url(../img/neonsign.jpg);
-        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/neonsign.jpg', sizingMethod='scale');
+/*        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/neonsign.jpg', sizingMethod='scale');*/
     }
 
     .graphic_txt {
