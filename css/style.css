@@ -1,4 +1,6 @@
     /*-------------------공통사항-------------------*/
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
     * {
         margin: 0;
         padding: 0;
@@ -18,8 +20,6 @@
         border: 0;
         display: block;
     }
-
-    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
 
     html,
     body {
