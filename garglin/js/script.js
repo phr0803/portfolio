@@ -17,58 +17,57 @@ $(document).ready(function () {
         });
     }
     layout();
-    
+
 
     $('.but').click(function () {
         i = $(this).index();
         $('#img_wrap').animate({
             top: -wh * i
         });
-        
-        if(i==0){
-            if(ww>=500){
-               $('#click_wrap').css({
-                right: '40px',
-                top: '41%'
-            });
-               }
-            if(ww<500){
-               $('#click_wrap').css({
-                right: '40px',
-                top: '38%'
-            });
-               }
-            
+
+        if (i == 0) {
+            if (ww >= 500) {
+                $('#click_wrap').css({
+                    right: '40px',
+                    top: '41%'
+                });
+            }
+            if (ww < 500) {
+                $('#click_wrap').css({
+                    right: '40px',
+                    top: '38%'
+                });
+            }
+
         }
-        if(i==1){
+        if (i == 1) {
             $('#click_wrap').css({
                 right: '40px',
                 top: '45%'
             });
         }
-        if(i==2){
+        if (i == 2) {
             $('#click_wrap').css({
                 right: '40px',
                 top: '50%'
             });
         }
-        if(i==3){
-            
-            if(ww>=500){
+        if (i == 3) {
+
+            if (ww >= 500) {
                 $('#click_wrap').css({
-                right: '40px',
-                top: '36%'
-            });
+                    right: '40px',
+                    top: '36%'
+                });
             }
-            if(ww<500){
+            if (ww < 500) {
                 $('#click_wrap').css({
-                right: '40px',
-                top: '31%'
-            });
+                    right: '40px',
+                    top: '31%'
+                });
             }
-            
+
         }
-        
 
         $('.but').css({
             backgroundColor: '#fff'
@@ -80,10 +79,10 @@ $(document).ready(function () {
     });
 
     var click_num = 0;
-    $('#toggle_label').click(function(){
-        if(click_num==0){
+    $('#toggle_label').click(function () {
+        if (click_num == 0) {
             $('#menu_wrap').css({
-                display:'block'
+                display: 'block'
             });
             click_num++;
         }
@@ -96,7 +95,7 @@ $(document).ready(function () {
             click_num--;
         }
     });
-    
+
 
     $(window).resize(function () {
 
