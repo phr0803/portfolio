@@ -6,7 +6,7 @@
     <title>한화L&C</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <!--    <link href="css/style.css" type="text/css" rel="stylesheet">-->
     <link href="css/pc.css" type="text/css" rel="stylesheet">
     <link href="css/note.css" type="text/css" rel="stylesheet">
     <link href="css/tab.css" type="text/css" rel="stylesheet">
@@ -757,6 +757,50 @@
 
         }
 
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+        *{
+            padding: 0; margin: 0;
+        }
+        img{
+            border: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+        }
+        html,body{
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333;
+            height: 100%;
+        }   
+
+        #section_1{
+            background: -ms-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/startup-593341_1920.jpg);
+        }
+        
+        #box_1{
+            background: -ms-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/find_img.jpg);
+        }
+        
+        #box_2{
+            background: -ms-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/news_img.jpg);
+        }
+        
+        #box_3{
+            background: -ms-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/sns_img.jpg);
+        }
+        
+        #section_1,#box_1,#box_2,#box_3{
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #top_but{width: 50px; height: 50px; position: absolute; bottom: 22%; right: 3%; background-color: #fff; box-shadow: 0px 3px 10px lightgrey; text-align: center; font-size: 14px; line-height: 46px; cursor: pointer;}
     </style>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/script.js"></script>
