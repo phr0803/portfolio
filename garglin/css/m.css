@@ -17,15 +17,6 @@
         background-image: url(../img/main_m.jpg);
     }
 
-    .swiper-slide:nth-child(1) > img {
-        width: 50px;
-        height: 50px;
-        position: relative;
-        top: 92%;
-        left: 50%;
-        margin-left: -25px;
-    }
-
     .swiper-slide:nth-child(2) {
         background-image: url(../img/img_1_m.jpg);
     }
