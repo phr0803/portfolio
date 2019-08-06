@@ -235,12 +235,10 @@
     }
 
     .swiper-slide:nth-child(5) > .txt_box:first-child {
-        margin: 100px 20px;
-        0 0;
+        margin: 100px 20px 0 0;
     }
 
     #title_4 {
         color: #dc2543;
     }
-
 }
