@@ -6,7 +6,7 @@
     <title>garglin</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
-    <link href="css/swiper.min.css" type="text/css" rel="stylesheet">
+    <link href="css/fullpage.min.css" type="text/css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 
@@ -30,49 +30,33 @@
         }
 
         html,
-        body,
-        .swiper-container {
+        body {
             width: 100%;
             height: 100%;
             font-family: 'Nanum Gothic', sans-serif;
             color: #fff;
         }
-
-        .swiper-pagination {
-            z-index: 1;
-        }
-
-        .swiper-pagination-bullet-active {
-            background: #000;
-        }
-
     </style>
     <style>
         @media all and (max-width:499px) {
-            html{
+            html {
                 -webkit-text-size-adjust: none;
             }
-            .swiper-pagination-bullet {
-                width: 10px;
-                height: 10px;
-            }
 
-            .swiper-slide {
-                width: 100%;
-                height: 100%;
+            .section {
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
             }
 
-            .swiper-slide:nth-child(1) {
+            .section:nth-child(1) {
                 background-image: url(img/main_m.jpg);
             }
 
-            .swiper-slide:nth-child(2) {
+            .section:nth-child(2) {
                 background-image: url(img/img_1_m.jpg);
             }
-            
+
             #mask {
                 position: absolute;
                 height: 100%;
@@ -231,7 +215,7 @@
                 margin: 70px 10px 0 0;
             }
 
-            .swiper-slide:nth-child(2)>.txt_box:first-child {
+            .section:nth-child(2)>.txt_box:first-child {
                 margin-right: 90px;
             }
 
@@ -269,11 +253,11 @@
                 display: none;
             }
 
-            .swiper-slide:nth-child(3) {
+            .section:nth-child(3) {
                 background-image: url(img/img_2_m.jpg);
             }
 
-            .swiper-slide:nth-child(3)>.txt_box:first-child {
+            .section:nth-child(3)>.txt_box:first-child {
                 margin-right: 30px;
             }
 
@@ -281,7 +265,7 @@
                 color: #0384bd;
             }
 
-            .swiper-slide:nth-child(4) {
+            .section:nth-child(4) {
                 background-image: url(img/img_3_m.jpg);
             }
 
@@ -289,7 +273,7 @@
                 color: #a13e97;
             }
 
-            .swiper-slide:nth-child(5) {
+            .section:nth-child(5) {
                 background-image: url(img/img_4_m.jpg);
             }
 
@@ -303,131 +287,121 @@
     <link href="css/tab.css" type="text/css" rel="stylesheet">
     <link href="css/m.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/fullpage.min.js"></script>
 </head>
 
 <body>
-    <div class="swiper-container">
-        <div id="mask">
-            <input type="checkbox" id="toggle">
-            <label for="toggle" id="toggle_label">
-                <img src="img/menu.png" alt="menu" />
-            </label>
-            <div id="menu_wrap">
-                <div id="header">
-                    <div id="header_top">
-                        <div id="close">
-                            <img src="img/close.png" alt="close_button" />
-                        </div>
-                        <h1 id="logo">
-                            <a href="#">
-                                <img src="img/header_logo.png" alt="main_logo" />
-                            </a>
-                        </h1>
+    <div id="mask">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" id="toggle_label">
+            <img src="img/menu.png" alt="menu" />
+        </label>
+        <div id="menu_wrap">
+            <div id="header">
+                <div id="header_top">
+                    <div id="close">
+                        <img src="img/close.png" alt="close_button" />
                     </div>
-                    <ul id="header_bottom">
-                        <li>
-                            <a href="#">가그린 이야기</a>
-                        </li>
-                        <li>
-                            <a href="#">충치예방</a>
-                        </li>
-                        <li>
-                            <a href="#">잇몸질환예방</a>
-                        </li>
-                        <li>
-                            <a href="#">입 안 클렌징</a>
-                        </li>
-                        <li>
-                            <a href="#">어린이 충치 예방</a>
-                        </li>
-                    </ul>
+                    <h1 id="logo">
+                        <a href="#">
+                            <img src="img/header_logo.png" alt="main_logo" />
+                        </a>
+                    </h1>
                 </div>
-                <div id="footer">
-                    <div id="footer_top">
-                        <div id="f_logo">
+                <ul id="header_bottom">
+                    <li>
+                        <a href="#">가그린 이야기</a>
+                    </li>
+                    <li>
+                        <a href="#">충치예방</a>
+                    </li>
+                    <li>
+                        <a href="#">잇몸질환예방</a>
+                    </li>
+                    <li>
+                        <a href="#">입 안 클렌징</a>
+                    </li>
+                    <li>
+                        <a href="#">어린이 충치 예방</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer">
+                <div id="footer_top">
+                    <div id="f_logo">
+                        <a href="#">
+                            <img src="img/f_logo.png" alt="footer_logo" />
+                        </a>
+                    </div>
+                    <div id="sns">
+                        <div class="icon">
                             <a href="#">
-                                <img src="img/f_logo.png" alt="footer_logo" />
+                                <img src="img/sns_youtube_icon2.png" alt="youtube" />
                             </a>
                         </div>
-                        <div id="sns">
-                            <div class="icon">
-                                <a href="#">
-                                    <img src="img/sns_youtube_icon2.png" alt="youtube" />
-                                </a>
-                            </div>
-                            <div class="icon">
-                                <a href="#">
-                                    <img src="img/sns_facebook_icon2.png" alt="facebook" />
-                                </a>
-                            </div>
-                            <div class="icon">
-                                <a href="#">
-                                    <img src="img/sns_naver_icon2.png" alt="naver" />
-                                </a>
-                            </div>
-                            <div class="icon">
-                                <a href="#">
-                                    <img src="img/sns_insta_icon2.png" alt="instagram" />
-                                </a>
-                            </div>
+                        <div class="icon">
+                            <a href="#">
+                                <img src="img/sns_facebook_icon2.png" alt="facebook" />
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="#">
+                                <img src="img/sns_naver_icon2.png" alt="naver" />
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="#">
+                                <img src="img/sns_insta_icon2.png" alt="instagram" />
+                            </a>
                         </div>
                     </div>
-                    <div id="footer_bottom">
-                        서울특별시 동대문구 천호대로64<br /> Copyright 2017 garglin.co.kr All Rights Reserved
-                    </div>
+                </div>
+                <div id="footer_bottom">
+                    서울특별시 동대문구 천호대로64<br /> Copyright 2017 garglin.co.kr All Rights Reserved
                 </div>
             </div>
         </div>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide">
-                <div class="txt_box">
-                    <div class="title" id="title_1">신제품출시</div>
-                    <div class="small_title">가그린 라임</div>
-                    <div class="bar"></div>
-                    <div class="cont">입냄새, 완벽차단!<br /> 상쾌한 가그린</div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="txt_box">
-                    <div class="title" id="title_2">충치예방 가그린</div>
-                    <div class="small_title">숨어있는 충치원인균</div>
-                    <div class="bar"></div>
-                    <div class="cont">S.Mutans균<br />99.9% 제거!</div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="txt_box" id="txt_box_3">
-                    <div class="title" id="title_3">잇몸질환예방 가그린</div>
-                    <div class="small_title">365일 잇몸건강을 위해</div>
-                    <div class="bar"></div>
-                    <div class="cont">P.진지발리스균<br /> 99.9% 제거!</div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="txt_box">
-                    <div class="title" id="title_4">어린이용 가그린</div>
-                    <div class="small_title">어린이 충치예방을 위해</div>
-                    <div class="bar"></div>
-                    <div class="cont">6살부터 시작하는<br /> 올바른 가그린 습관!</div>
-                </div>
+    </div>
+    <div id="fullpage">
+        <div class="section"></div>
+        <div class="section">
+            <div class="txt_box">
+                <div class="title" id="title_1">신제품출시</div>
+                <div class="small_title">가그린 라임</div>
+                <div class="bar"></div>
+                <div class="cont">입냄새, 완벽차단!<br /> 상쾌한 가그린</div>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="section">
+            <div class="txt_box">
+                <div class="title" id="title_2">충치예방 가그린</div>
+                <div class="small_title">숨어있는 충치원인균</div>
+                <div class="bar"></div>
+                <div class="cont">S.Mutans균<br />99.9% 제거!</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="txt_box" id="txt_box_3">
+                <div class="title" id="title_3">잇몸질환예방 가그린</div>
+                <div class="small_title">365일 잇몸건강을 위해</div>
+                <div class="bar"></div>
+                <div class="cont">P.진지발리스균<br /> 99.9% 제거!</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="txt_box">
+                <div class="title" id="title_4">어린이용 가그린</div>
+                <div class="small_title">어린이 충치예방을 위해</div>
+                <div class="bar"></div>
+                <div class="cont">6살부터 시작하는<br /> 올바른 가그린 습관!</div>
+            </div>
+        </div>
     </div>
 
-
-    <script src="js/swiper.min.js"></script>
+    
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            direction: 'vertical',
-            mousewheel: true,
-            slidesPerView: 1,
-            spaceBetween: 100,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            }
+        new fullpage('#fullpage', {
+            navigation: true
         });
 
 
@@ -448,7 +422,6 @@
                 click_num--;
             }
         });
-
     </script>
 </body>
 

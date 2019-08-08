@@ -1,23 +1,15 @@
 @media all and (max-width:959px) and (min-width:760px) {
-
-    .swiper-pagination-bullet {
-        width: 20px;
-        height: 20px;
-    }
-
-    .swiper-slide {
-        width: 100%;
-        height: 100%;
+    .section {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
 
-    .swiper-slide:nth-child(1) {
+    .section:nth-child(1) {
         background-image: url(../img/main.jpg);
     }
 
-    .swiper-slide:nth-child(2) {
+    .section:nth-child(2) {
         background-image: url(../img/img_1_note.jpg);
     }
 
@@ -204,7 +196,7 @@
         font-size: 30px;
     }
 
-    .swiper-slide:nth-child(3) {
+    .section:nth-child(3) {
         background-image: url(../img/img_2_note.jpg);
     }
 
@@ -213,7 +205,7 @@
         color: #0384bd;
     }
 
-    .swiper-slide:nth-child(4) {
+    .section:nth-child(4) {
         background-image: url(../img/img_3_note.jpg);
     }
 
@@ -222,7 +214,7 @@
         color: #a13e97;
     }
 
-    .swiper-slide:nth-child(5) {
+    .section:nth-child(5) {
         background-image: url(../img/img_4_note.jpg);
     }
 
